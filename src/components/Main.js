@@ -12,7 +12,7 @@ function Main() {
                 <source src={`${process.env.PUBLIC_URL}/videos/Untitled (3).mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div class="content">
+            <div className="content">
                 <h2>JALYNN NICOLY</h2>
             </div>
         </section>

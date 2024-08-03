@@ -1,5 +1,3 @@
-/* import logo from './logo.svg'; */
-/* import './App.css'; */
 import './CSS/index.css'
 
 import React from 'react';
@@ -28,6 +26,7 @@ function App() {
 
       <Header />
       <Main />
+
     </div>
   );
 }

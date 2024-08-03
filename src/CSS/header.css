@@ -17,6 +17,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    width: 100%
 }
 
 nav ul li a {
@@ -31,27 +32,6 @@ nav ul li a:hover {
 }
 
 /* Designing with responsiveness (react) in mind */
-
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: block;
-        text-align: center;
-    }
-    
-    nav ul li a {
-        padding: 15px;
-        font-size: 18px;
-    }
-}
-
-/* src/CSS/header.css */
-/* ...existing styles... */
 
 .nav-toggle {
     display: none;
@@ -70,9 +50,23 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
+        align-items: center;
     }
     
     nav ul.open {
         display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        width: 100%
+    }
+    
+    nav ul li a {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        display: block;
     }
 }
