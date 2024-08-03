@@ -1,0 +1,78 @@
+header {
+    background-color: #022943;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Designing with responsiveness (react) in mind */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+/* src/CSS/header.css */
+/* ...existing styles... */
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    
+    nav ul.open {
+        display: flex;
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalynn Nicoly's Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="section-home">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/Untitled (3).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2>JALYNN NICOLY</h2>
+        </div>
+    </section>
+
+    <section id="about" class="section-about">
+        <h2 class="about-heading">About Me</h2>
+        <div class="about-content">
+            <img src="images/croppedAboutMe.jpg" alt="Jalynn Nicoly" class="profile-photo">
+            <div class="about-text">
+                <div class="about-text-wrapper">
+                    <p>
+                        Welcome!
+                    </p>
+                    <p>
+                        I am an aspiring researcher transitioning from my Bachelor's degree from Colorado State University to puruse my Ph.D. at the University of Colorado Boulder, both of which are in the Computer Science field. 
+                        I am on a mission to explore how physiological signals can improve our virtual surroundings, whether that is in virtual or augmented reality. 
+                        I was born in Madison, Wisconsin, but raised in Durango, Colorado, where I had the opportunity to grow my career interest in Psychology by asking why people do what they do!
+                        When starting my undergraduate with this question in mind, I was determined to work in a research lab early on. 
+                        My determination has led me down a path of gaining four years of experience at the following research labs:
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <ul class="research-labs">
+            <li>
+                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall. Leanne Hirshfields' lab has already brought me in as one of their own, starting strong with a project funded by the NAVY, introducing me to the world of brain signal measuring devices!
+            </li>
+            <li>
+                <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with Angelique Taylor, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
+            </li>
+            <li>
+                <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in Francisco Ortega's research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP and an in-progress first-authorship with ACM SAP.
+            </li>
+            <li>
+                <strong>Memory and Metacognitive Lab:</strong> Under the mentorship of Matthew Rhodes, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
+            </li>
+        </ul>
+
+        <div class="button-container">
+            <button onclick="window.open('pdfs/Resume.pdf', '_blank')">Preview CV</button>
+            <button onclick="window.open('pdfs/Resume.pdf', '_blank')">Preview Resume</button>
+        </div>
+
+        <div class="button-container">
+            <button onclick="window.open('https://github.com/Jalynnn/Website', '_blank')">P.S. I coded this website! Check out the code here in GitHub.</button>
+        </div>
+    </section>
+
+    <section id="projects" class="section-projects">
+        <h2 class="projects-heading">Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="images/Projects/fNIRSCap.jpg" alt="A few optodes in the prefrontal region of an fNIRS cap.">
+                <p class="name" style="color: gray;">NAVY Cognitive Load within Virtual Reality</p>
+                <p class="date" style="color: lightgray;">April 2023 to Current</p>
+                <p class="description">
+                    This project is huge! 
+                    Collaborators include CSU, CU Boulder, University of Northern Colorado, and University of Montana. 
+                    Here, we are observing how users are influence by a manipulation of the three types of cognitive load: Germane, Extraneous, and Intrinsic.
+                    Starting on this project as a CSU student included attending meetings as the design was crafted, and later running experiments with participants. 
+                    Once I graduated and began my transition to CU Boulder, I became very hands on the design of the virtual environment and the connection to brain signal measures.
+                    I have made modifications to the virtual environment in Unity to allow for Lab Streaming Layer (LSL). 
+                    LSL enables event markers to be sent and received by both the fNIRS Aurora and EEG BrainVision applications to improve data analysis.
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/Projects/CodingSheetVertical.PNG" alt="A screenshot of our coding sheet while analyzing articles.">
+                <p class="name" style="color: gray;">Interaction Cues Review</p>
+                <p class="date" style="color: lightgray;">August 2023 to Current</p>
+                <p class="description">
+                    For this project, another member and I are reading and decoding over 100 papers.
+                    When you are in a virtual settings, there are several types of cues around you that help direct you to the necessary tasks. 
+                    There are a variety of cues and their appearence.
+                    Are they visual or audio? 
+                    Are they attached to the user or some part of the environment? 
+                    What information do they provide you? 
+                    What triggers the cue to appear?
+                    These are all questions we want to address to help our meta-review of determining the most successful cues dependent on the context.
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/Projects/BeautyVertical.PNG" alt="Three virtual environments utilized in our study.">
+                <p class="name" style="color: gray;">Forest Bathing: Beauty</p>
+                <p class="date" style="color: lightgray;">2023 to Current</p>
+                <p class="description">
+                    This was my primary project during the last two years of my undergraduate degree.
+                    This is essentially phase three of a project observing the characteristics of a virtual environment.
+                    By observing select characteristics and modifying each, we became familiar with how that characteristic influences user restorativeness.
+                    For this phase, we looked at beauty and movement in forest environments, as real forests have already demonstrated stress reducing effects.
+                    We found that the virtual 3D environment was not significantly different from the 2D virtual image, but was compared to the 2D virtual art and control condition.
+                    I have the opportunity to present this research experiment at ACM SAP August 2024 in Dublin Ireland.
+                </p>
+            </div>  
+
+            <div class="project">
+                <img src="images/Projects/BaseCamp.jpg" alt="Healthcare workers performing a resusucitation simulation.">
+                <p class="name" style="color: gray;">Augmented Reality for Healthcare</p>
+                <p class="date" style="color: lightgray;">May 2023 to December 2023</p>
+                <p class="description">
+                    Innovative tools such as augmented reality used by healthcare workers could improve collaboration and task management in resuscitation cases. 
+                    We conducted a field study with medical students performing resuscitation scenarios with one HCW using a HoloLens device to observe whether our virtual environment improves time management. 
+                    We also focused on understanding how individuals interacted with the user interface of the AR device and virtual environment. 
+                    Despite challenges in data collection, our findings highlight influential user feedback and critical experiment designs for successful implementations of AR technology in future investigations. 
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/Projects/RealismVertical.PNG" alt="Two virtual environments utilized in this experiment.">
+                <p class="name" style="color: gray;">Forest Bathing: Realism</p>
+                <p class="date" style="color: lightgray;">2022 to 2023</p>
+                <p class="description">
+                    This is phase two of an ongoing project that I worked on with Rachel Masters during my undergrad.
+                    Phase one observed biomass where I got to be a participant, whereas, phase two took it a step further by observing realism.
+                    Realism is a characteristic of virtual enviornments that can influence user restorativeness.
+                    This project is my first published paper where I am featured as second author!
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/Projects/VRHackathon.jpg" alt="All members of my group and I holding our prize for second place.">
+                <p class="name" style="color: gray;">CSU's VR Hackathon</p>
+                <p class="date" style="color: lightgray;">November 2022</p>
+                <p class="description">
+                    One of the first events I participated in with members from the NUILab was CSU's VR Hackathon. 
+                    My group placed 2nd with our complex virtual enviornment focused on creating a mindfulness program to improve overall well-being and emotion regulation.
+                    Each participant in my group designed their own environment, mine being focused on controlled breathing, which were all connected in a home screen environment where users can pick which mindfulness task they wanted to partake in.
+                    During this project I spent several hours of a weekend getting to know my group and learning skills to work together in a unique environment.
+                    <a href="https://source.colostate.edu/virtual-reality-challenge-winners-announced/" target="_blank">Learn more here!</a>
+                </p>
+            </div>
+
+            <div class="project">
+                <img src="images/Projects/BehavioralSciencesBuilding.jpg" alt="The outside of the Behavioral Science Building at CSU">
+                <p class="name" style="color: gray;">Math Study With Matthew Rhodes</p>
+                <p class="date" style="color: lightgray;">January 2021 to December 2021</p>
+                <p class="description">
+                    While my first 6 months on this project was essentially getting adjusted to being a research assistant, the second half I got to help run experiments.
+                    This lab is where I first became CITI certified and learned the ins and outs of performing a research experiment.
+                    The study I ran participants on was pretty automated where I specifically around to get users started and to help with any problems that arose.
+                    I did work with the participants to collect consent and demongraphic forms, and to later direct them to the computer where the math task would take place.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="publications" class="section-publications" style="background-image: url('images/backgrounds/AdobeStock_132147953.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <h2 class="publications-heading">Publications</h2>
+        <ul class="publication-list">
+            <!--- <li class="publication-item">Author1, Author2, Author3. "Title of the paper." Journal Name, Year, Volume(Issue), Pages.</li>
+            <li class="publication-item">Author1, Author2. "Title of the paper." Journal Name, Year, Volume(Issue), Pages.</li> --->
+            <li class="publication-item">Masters, R., Nicoly, J., Gaddy, V., Interrante, V., & Ortega, F. (2024). The impact of nature realism on the restorative quality of virtual reality forest bathing. <em>ACM Transactions on Applied Perception</em>, <em>17</em>(2). <a href="https://doi.org/10.1145/3670406" target="_blank" style="color: white;">https://doi.org/10.1145/3670406</a></li>
+        </ul>
+    </section>    
+
+    <section id="gallery" class="section-gallery">
+        <h2 class="gallery-heading">Gallery</h2>
+        <div class="gallery-container">
+
+            <!---
+            <div class="gallery-item" onclick="openGallery('gallery13')">
+                <h3>TAPIA 2024</h3>
+                <img src="images/Gallery/TAPIA2024/.jpg" alt="Conference 13 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery12')">
+                <h3>ACM SAP 2024</h3>
+                <img src="images/Gallery/ACMSAP/.jpg" alt="Conference 12 Thumbnail">
+            </div>
+            --->
+
+            <div class="gallery-item" onclick="openGallery('gallery11')">
+                <h3>The Prepared Warfighter Portfolio Review 2024</h3>
+                <img src="images/Gallery/PWPR/_DSC0852 (1).jpg" alt="Conference 11 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery10')">
+                <h3>FNIRS Data Analysis Workshop 2024</h3>
+                <img src="images/Gallery/FNIRS/PXL_20240620_130607751.MP (1).jpg" alt="Conference 10 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery9')">
+                <h3>IEEE VR 2024</h3>
+                <img src="images/Gallery/IEEEVR/StandingByPoster (1).jpeg" alt="Conference 9 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery8')">
+                <h3>CES 2024</h3>
+                <img src="images/Gallery/CES/PXL_20240111_215446570 (1).jpg" alt="Conference 8 Thumbnail">
+            </div> 
+
+            <div class="gallery-item" onclick="openGallery('gallery7')">
+                <h3>Grace Hopper Conference 2023</h3>
+                <img src="images/Gallery/GHC/PXL_20230927_171157989 (1).jpg" alt="Conference 7 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery6')">
+                <h3>TAPIA / STAR Celebration 2023</h3>
+                <img src="images/Gallery/TAPIA2023/Presenting.jpg" alt="Conference 6 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery5')">
+                <h3>Quantico Virginia 2023</h3>
+                <img src="images/Gallery/Virginia/IMG_3783 (1).jpg" alt="Conference 5 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery4')">
+                <h3>XR Access 2023</h3>
+                <img src="images/Gallery/XRAccess/20230615_174907.jpg" alt="Conference 4 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery3')">
+                <h3>Multicultural Undergraduate Research Art and Leadership Symposium 2023</h3>
+                <img src="images/Gallery/MURALS/20230331_082633.jpg" alt="Conference 3 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery2')">
+                <h3>Rocky Mountain Celebration for Women 2022</h3>
+                <img src="images/Gallery/RockyMountainCelebration/20220929_200412 (1).jpg" alt="Conference 2 Thumbnail">
+            </div>
+
+            <div class="gallery-item" onclick="openGallery('gallery1')">
+                <h3>TAPIA 2022</h3>
+                <img src="images/Gallery/TAPIA2022/ConventionCenter (1).jpg" alt="Conference 1 Thumbnail">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <video autoplay muted loop id="contact-video">
+            <source src="videos\Untitled (4).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="contact-content">
+            <h2 class="contact-heading">Contact</h2>
+            <p>I think contact me boxes are tacky. Maybe just list my general contact information.</p>
+            <!-- Additional content can go here -->
+        </div>
+    </section>
+    
+</main>
+
+<!--- I need to fix the size of the icons -->
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jalynn-nicoly-8012a7210/" target="_blank"><img class="linkedin-icon" src="images/Icons/linkedinIcon (2).png" alt="LinkedIn"></a>
+        <a href="https://github.com/Jalynnn" target="_blank"><img src="images/Icons/githubIcon (1).png" alt="GitHub"></a>
+        <a href="https://www.facebook.com/profile.php?id=100006282198928" target="_blank"><img src="images/Icons/facebookIcon.png" alt="Facebook"></a>
+    </div>
+</footer>
+
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeGallery()">&times;</span>
+    <div id="lightbox-thumbnails" class="lightbox-thumbnails"></div>
+    <img class="lightbox-img" id="lightbox-img">
+    <div class="caption-container">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

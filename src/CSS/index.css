@@ -1,0 +1,19 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0 20px;
+} 

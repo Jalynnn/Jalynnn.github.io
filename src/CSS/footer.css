@@ -1,0 +1,27 @@
+footer {
+    background-color: #022943;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons .linkedin-icon {
+    width: 50px;  /* Specific width for LinkedIn icon */
+    height: 50px; /* Specific height for LinkedIn icon */
+    margin-top: -5px;
+}
