@@ -25,30 +25,24 @@
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 1.5em; /* Adjusts the font size for all text within this section */
+    font-size: 1.5em;
 }
 
 .section-home .content h2 {
-    font-size: 2.5em; /* Adjusts the font size for headings */
-    margin-left: -60px;
+    font-size: 2.5em;
+    margin-top: -40px;
 }
 
 .section-home .content p {
-    font-size: 2.5em; /* Adjusts the font size for paragraphs */
+    font-size: 2.5em;
 }
 
 /* Designing with responsiveness (react) in mind */
 
 @media (max-width: 768px) {
-
-
     .section-home .content {
         padding: 10px;
         font-size: 1em;
-    }
-
-    .section-home .content h2 {
-        font-size: 2em;
     }
 
     .section-home .content p {
