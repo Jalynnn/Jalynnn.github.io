@@ -1,5 +1,5 @@
 .section-publications {
-    background-image: url('images/backgrounds/AdobeStock_132147953.jpg'); /* Specify the path to your image */
+    background-image: url('AdobeStock_132147953.jpg'); /* Specify the path to your image */
     background-size: cover; /* Ensure the background image covers the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
