@@ -1,0 +1,144 @@
+.section-projects {
+    background-color: #A4D7CC;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: -60px;
+}
+
+.projects-heading {
+    width: 100%;
+    margin-bottom: -20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 4em;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.project-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-image-container:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-title {
+    font-size: 18px;
+    margin-top: 25px; /* change depending on screen size */
+    color: gray;
+    padding: 0 10px;
+}
+
+.project-details {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    animation: slide-up 0.3s forwards;
+    z-index: 1000;
+}
+
+.project-details-content {
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.project-details-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-details-text {
+    flex: 1;
+}
+
+.project-date {
+    font-size: 14px;
+    margin-top: 10px;
+    color: lightgray;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .project-details-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-details-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

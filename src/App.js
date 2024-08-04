@@ -2,7 +2,12 @@ import './CSS/index.css'
 
 import React from 'react';
 import Header from './components/Header';
-import Main from './components/Main';
+import Home from './components/Home';
+import About from './components/About';
+import Project from './components/Project';
+import Publications from './components/Publications';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -10,7 +15,12 @@ function App() {
     <div className="App">
 
       <Header />
-      <Main />
+      <Home />
+      <About />
+      <Project />
+      <Publications />
+      <Gallery />
+      <Contact />
       <Footer />
 
     </div>

@@ -39,3 +39,42 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Copied */
+
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-contact form label {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.section-contact form input, .section-contact form textarea, .section-contact form button {
+    width: 200%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+.section-contact input[type="submit"] {
+    background: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+.section-contact input[type="submit"]:hover {
+    background: #555;
+}
