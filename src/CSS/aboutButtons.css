@@ -5,7 +5,7 @@
 .button-container button {
     margin: 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -15,7 +15,7 @@
 }
 
 .button-container button:hover {
-    background-color: #022943;
+    background-color: #233f52;
 }
 
 .button-container button:focus {

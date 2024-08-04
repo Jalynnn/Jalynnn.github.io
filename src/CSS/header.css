@@ -17,7 +17,8 @@ nav ul {
 
 nav ul li {
     display: inline;
-    width: 100%
+    width: 100%;
+    font-size: 20px;
 }
 
 nav ul li a {
@@ -28,7 +29,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #233f52;
 }
 
 /* Designing with responsiveness (react) in mind */
