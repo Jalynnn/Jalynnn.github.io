@@ -1,6 +1,9 @@
 import './CSS/index.css'
 
 import React from 'react';
+
+import ScrollFeature from './components/ScrollFeature';
+
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -13,6 +16,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+
+      <ScrollFeature />
 
       <Header />
       <Home />
