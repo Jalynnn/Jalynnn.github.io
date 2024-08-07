@@ -1,11 +1,14 @@
 .section-publications {
-    background-image: url('AdobeStock_132147953.jpg'); /* Specify the path to your image */
-    background-size: cover; /* Ensure the background image covers the entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-image: url('AdobeStock_132147953.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
     text-align: center;
     position: relative;
+
+    /* It was becoming hard to see the white text */
+    filter: grayscale(15%);
+    background-position: center - 15px;
 }
 
 .publications-heading {
@@ -23,26 +26,26 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the items horizontally */
+    align-items: center;
 }
 
 .publication-item {
     position: relative;
     color: white;
-    margin-bottom: 30px; /* Adjust the spacing between items */
-    padding: 0 20px; /* Adjust padding as needed */
-    max-width: 800px; /* Set a maximum width for the publication items */
-    text-align: left; /* Align text to the left */
-    font-size: 1em; /* Adjust the font size as needed */
+    margin-bottom: 30px;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: left;
+    font-size: 1em;
 }
 
 .publication-item::before {
     content: '';
     position: absolute;
-    left: 0; /* Position the vertical line at the left edge of the item */
+    left: 0;
     top: 0;
     bottom: 0;
-    width: 6px; /* Width of the vertical line */
-    background-color: white; /* Color of the vertical line */
-    transform: translateX(-50%); /* Center the line at the left edge */
+    width: 6px;
+    background-color: white;
+    transform: translateX(-50%);
 }

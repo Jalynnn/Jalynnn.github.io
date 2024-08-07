@@ -23,8 +23,8 @@ function About() {
                         </p>
                     </div>
                     <p>
-                        I am an aspiring researcher transitioning from my Bachelor's degree from <u>Colorado State University</u> to puruse my Ph.D. at the <u>University of Colorado Boulder</u>, both of which are in the <u>Computer Science</u> field. 
-                        I am on a mission to explore how physiological signals can improve our virtual surroundings, whether that is in virtual or augmented reality. 
+                        I am an aspiring researcher pursuing my Ph.D. at the <u>University of Colorado Boulder</u> and a recent graduate with my Bachelor's degree from <u>Colorado State University</u>, both of which are in the <u>Computer Science</u> field. 
+                        I am on a mission to explore how physiological and neurological signals can improve our virtual surroundings, whether that is in virtual or augmented reality. 
                         I was born in Madison, Wisconsin, but raised in Durango, Colorado, where I had the opportunity to grow my career interest in Psychology by asking why people do what they do!
                         When starting my undergraduate with this question in mind, I was determined to work in a research lab early on. 
                         My determination has led me down a path of gaining <u>four years of experience</u> at the following research labs:
@@ -41,7 +41,7 @@ function About() {
                         </p>
                     </div>
                     <li>
-                        <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall. Leanne Hirshfields' lab has already brought me in as one of their own, starting strong with a project funded by the NAVY, introducing me to the world of brain signal measuring devices!
+                        <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <u>Leanne Hirshfields'</u> lab has already brought me in as one of their own, starting strong with a project funded by the NAVY, introducing me to the world of brain signal measuring devices!
                     </li>
                 </div>
 
@@ -53,7 +53,7 @@ function About() {
                         </p>
                     </div>
                     <li>
-                        <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with Angelique Taylor, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
+                        <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with <u>Angelique Taylor</u>, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
                     </li>
                 </div>
 
@@ -65,7 +65,7 @@ function About() {
                         </p>
                     </div>
                     <li>
-                        <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in Francisco Ortega's research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP and an in-progress first-authorship with ACM SAP.
+                        <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in <u>Francisco Ortega's</u> research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP 2024 and a first-authorship with ACM SAP 2024.
                     </li>
                 </div>
 
@@ -77,7 +77,7 @@ function About() {
                         </p>
                     </div>
                     <li>
-                        <strong>Memory and Metacognition Lab:</strong> Under the mentorship of Matthew Rhodes, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
+                        <strong>Memory and Metacognition Lab:</strong> Under the mentorship of <u>Matthew Rhodes</u>, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
                     </li>
                 </div>
             </ul>

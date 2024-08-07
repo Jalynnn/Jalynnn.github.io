@@ -1,6 +1,5 @@
-footer {
+.footer {
     background-color: #022943;
-    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
@@ -8,20 +7,25 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensures all icons are centered vertically */
 }
 
 .social-icons a {
-    display: inline-block;
+    display: flex; /* Use flexbox for child alignment */
+    justify-content: center;
+    align-items: center;
     margin: 0 10px;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: 50px;
+    /* width: 50px; /* Set a uniform width */
+    /* height: 50px; /* Set a uniform height */
+    /* object-fit: contain; /* Ensures the aspect ratio is maintained and fits within the given dimensions */
 }
 
 .social-icons .linkedin-icon {
-    width: 50px;  /* Specific width for LinkedIn icon */
-    height: 50px; /* Specific height for LinkedIn icon */
-    margin-top: -5px;
+    height: 78px;
+    margin-right: -10px;
 }
