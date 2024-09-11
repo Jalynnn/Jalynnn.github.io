@@ -25,9 +25,9 @@ function Header() {
                 <ul id="nav-menu" className={isNavOpen ? "open" : ""}>
                     <li><a href="#home" onClick={closeNav}>Home</a></li>
                     <li><a href="#about" onClick={closeNav}>About</a></li>
-                    <li><a href="#projects" onClick={closeNav}>Projects</a></li>
                     <li><a href="#publications" onClick={closeNav}>Publications</a></li>
-                    <li><a href="#gallery" onClick={closeNav}>Gallery</a></li>
+                    <li><a href="#projects" onClick={closeNav}>Projects</a></li>
+                    {/* <li><a href="#gallery" onClick={closeNav}>Gallery</a></li> */}
                     <li><a href="#contact" onClick={closeNav}>Contact</a></li>
                 </ul>
             </nav>
