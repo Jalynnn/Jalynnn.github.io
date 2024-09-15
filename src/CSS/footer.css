@@ -15,17 +15,18 @@
     justify-content: center;
     align-items: center;
     margin: 0 10px;
+    max-height:50px;
 }
 
 .social-icons img {
     width: auto;
-    height: 50px;
+    height: 40px;
     /* width: 50px; /* Set a uniform width */
     /* height: 50px; /* Set a uniform height */
     /* object-fit: contain; /* Ensures the aspect ratio is maintained and fits within the given dimensions */
 }
 
 .social-icons .linkedin-icon {
-    height: 78px;
+    height: 65px;
     margin-right: -10px;
 }

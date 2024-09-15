@@ -1,6 +1,7 @@
 .contact-heading {
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 30px;
     color: white;
     text-align: center;
     padding: 20px;
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #D3D9C3;
 }
 
 #contact-video {
@@ -40,8 +42,6 @@
     margin-right: auto;
 }
 
-/* Copied */
-
 .section-contact form {
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
 
 .section-contact form input, .section-contact form textarea, .section-contact form button {
     width: 200%;
-    max-width: 500px;
+    max-width: 700px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -77,4 +77,14 @@
 
 .section-contact input[type="submit"]:hover {
     background: #555;
+}
+
+.message {
+    min-height: 200px;
+}
+
+@media (max-width: 600px) {
+    .section-contact form input, .section-contact form textarea, .section-contact form button {
+        max-width: 400px;
+    }
 }

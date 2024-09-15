@@ -23,11 +23,11 @@ function About() {
                         </p>
                     </div>
                     <p>
-                        I am an aspiring researcher pursuing my Ph.D. at the <u>University of Colorado Boulder</u> and a recent graduate with my Bachelor's degree from <u>Colorado State University</u>, both of which are in the <u>Computer Science</u> field. 
+                        I am an aspiring researcher pursuing my Ph.D. at the <strong>University of Colorado Boulder</strong> and a recent graduate with my Bachelor's degree from <strong>Colorado State University</strong>, both of which are in the <strong>Computer Science</strong> field. 
                         I am on a mission to explore how physiological and neurological signals can improve our virtual surroundings, whether that is in virtual or augmented reality. 
                         I was born in Madison, Wisconsin, but raised in Durango, Colorado, where I had the opportunity to grow my career interest in Psychology by asking why people do what they do!
                         When starting my undergraduate with this question in mind, I was determined to work in a research lab early on. 
-                        My determination has led me down a path of gaining <u>four years of experience</u> at the following research labs:
+                        My determination has led me down a path of gaining <strong>four years of experience</strong> at the following research labs:
                     </p>
                 </div>
             </div>

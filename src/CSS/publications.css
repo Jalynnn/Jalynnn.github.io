@@ -1,5 +1,6 @@
 .section-publications {
-    background-image: url('AdobeStock_132147953.jpg');
+    /* background-image: url('AdobeStock_132147953.jpg'); */
+    background-color: #D3D9C3;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;

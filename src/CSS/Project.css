@@ -1,5 +1,7 @@
 .section-projects {
-    background-color: #A4D7CC;
+    /* background-color: #A4D7CC; */
+    /* background-color: #49111C; */
+    background-color: #587B7F;
     padding: 30px;
     text-align: center;
     margin-bottom: -60px;
@@ -30,7 +32,7 @@
     flex: 1 1 calc(33.333% - 20px);
 
     max-width: 300px;
-    min-width: 225px;
+    min-width: 275px;
     /* max-width: calc(33.333% - 20px);
     /* max-width: auto;
     max-height: 2000px; */
@@ -48,7 +50,6 @@
 }
 
 .project-image {
-    /* Something to be messed with within media */
     width: 100%;
     height: 330px;
     transition: transform 0.3s ease;

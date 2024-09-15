@@ -1,5 +1,6 @@
 .section-about {
-    background-color: #742134;
+    /* background-color: #742134; */
+    background-color: #587B7F;
     padding: 20px;
     text-align: center;
     color: white;
@@ -90,7 +91,8 @@
 }
 
 .lab-info a {
-    color: #022943;
+    /* color: #022943; */
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -101,6 +103,7 @@
 
     .profile-photo {
         width: 100%;
+        max-width: 350px;
         height: auto;
         margin-bottom: 20px;
     }
@@ -113,5 +116,13 @@
     .research-labs {
         text-align: center; /* Center-align list on small screens */
         padding: 0 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 2000px) {
+    .profile-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
