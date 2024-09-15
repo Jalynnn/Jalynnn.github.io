@@ -9,6 +9,10 @@ function Footer() {
                 <a href="https://github.com/Jalynnn" target="_blank" rel="noopener noreferrer"><img src={`${process.env.PUBLIC_URL}/images/Icons/githubIcon (1).png`} alt="GitHub"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100006282198928" target="_blank" rel="noopener noreferrer"><img src={`${process.env.PUBLIC_URL}/images/Icons/facebookIcon.png`} alt="Facebook"/></a>
             </div>
+            <div className="Extra">
+                <p>All rights reserved, 2024 Jalynn B. Nicoly</p>
+                <p>Last Updated: September 15th, 2024</p>
+            </div>
         </div>
     );
 }

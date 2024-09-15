@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import '../CSS/Project.css';
 
 const ProjectCard = ({ title, image, date, description, isSelected, handleClick }) => {
+  const descriptionWithLink = description.replace(
+    "Learn more here!",
+    '<a href="https://source.colostate.edu/virtual-reality-challenge-winners-announced/" target="_blank" rel="noopener noreferrer">Learn more here!</a>'
+  );
+  
   return (
     <div className="project-card">
       <div className="project-image-container" onClick={handleClick}>
@@ -15,7 +20,8 @@ const ProjectCard = ({ title, image, date, description, isSelected, handleClick 
             <div className="project-details-text">
               <h3>{title}</h3>
               <p className="project-date">{date}</p>
-              <p>{description}</p>
+              <p dangerouslySetInnerHTML={{ __html: descriptionWithLink }} /> {/* Render HTML */}
+              {/* <p>{description}</p> */}
             </div>
             <button className="close-button" onClick={handleClick}>x</button>
           </div>
@@ -33,71 +39,69 @@ const Projects = () => {
       title: "Cognitive Workload within Virtual Reality",
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
-      description: `This project is huge! Collaborators include CSU, CU Boulder, University of Northern Colorado, and University of Montana. 
-      Here, we are observing how users are influence by a manipulation of the three types of cognitive load: Germane, Extraneous, and Intrinsic. 
-      Starting on this project as a CSU student included attending meetings as the design was crafted, and later running experiments with participants. 
-      Once I graduated and began my transition to CU Boulder, I became very hands on the design of the virtual environment and the connection to brain signal measures. 
-      I have made modifications to the virtual environment in Unity to allow for Lab Streaming Layer (LSL). 
-      LSL enables event markers to be sent and received by both the fNIRS Aurora and EEG BrainVision applications to improve data analysis.`,
-    },
+      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
+      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
+      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
+      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
+      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
+      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+    },    
     {
       title: "Interaction Cues Review",
       image: `${process.env.PUBLIC_URL}/images/Projects/CodingSheetVertical.PNG`,
       date: "August 2023 to Current",
-      description: `For this project, another member and I are reading and decoding over 100 papers. 
-      When you are in a virtual settings, there are several types of cues around you that help direct you to the necessary tasks. 
-      There are a variety of cues and their appearence. Are they visual or audio? Are they attached to the user or some part of the environment? 
-      What information do they provide you? What triggers the cue to appear? 
-      These are all questions we want to address to help our meta-review of determining the most successful cues dependent on the context.`,
-    },
+      description: `For this project, another member and I are reviewing and analyzing over a hundred papers. 
+      In virtual settings, various types of cues help guide users to the necessary tasks. 
+      These cues come in different forms and appearances. Are they visual or auditory? Are they attached to the user or part of the environment? 
+      What information do they provide? What triggers the cue to appear? 
+      These are some of the questions we aim to answer in our meta-review, which seeks to determine the most effective cues based on the context.`,
+    },    
     {
       title: "Forest Bathing: Beauty and Movement",
       image: `${process.env.PUBLIC_URL}/images/Projects/BeautyVertical.PNG`,
-      date: "2023 to Current",
+      date: "November 2022 to September 2024",
       description: `This was my primary project during the last two years of my undergraduate degree.
-      This is essentially phase three of a project observing the characteristics of a virtual environment.
-      By observing select characteristics and modifying each, we became familiar with how that characteristic influences user restorativeness.
-      For this phase, we looked at beauty and movement in forest environments, as real forests have already demonstrated stress reducing effects.
-      We found that the virtual 3D environment was not significantly different from the 2D virtual image, but was compared to the 2D virtual art and control condition.
-      I have the opportunity to present this research experiment at ACM SAP August 2024 in Dublin Ireland.`,
-    },
+      It is essentially the third phase of a project exploring the characteristics of virtual environments.
+      By observing and modifying select characteristics, we examined how each one influences user restorativeness.
+      In this phase, we focused on beauty and movement in forest environments, as real forests have already shown stress-reducing effects.
+      We found that the virtual 3D environment was not significantly different from the 2D virtual image, but it was significantly different when compared to the 2D virtual art and the control condition.
+      I had the opportunity to present this research as a twenty-minute presentation at the Association for Computing Machinery's Symposium on Applied Perception in August 2024 in Dublin, Ireland.`,
+    },    
     {
       title: "Augmented Reality for Healthcare Workers",
       image: `${process.env.PUBLIC_URL}/images/Projects/BaseCamp.jpg`,
       date: "May 2023 to December 2023",
-      description: `Innovative tools such as augmented reality used by healthcare workers could improve collaboration and task management in resuscitation cases. 
-      We conducted a field study with medical students performing resuscitation scenarios with one HCW using a HoloLens device to observe whether our virtual environment improves time management. 
-      We also focused on understanding how individuals interacted with the user interface of the AR device and virtual environment. 
-      Despite challenges in data collection, our findings highlight influential user feedback and critical experiment designs for successful implementations of AR technology in future investigations.`,
-    },
+      description: `Innovative tools like augmented reality, when used by healthcare workers, have the potential to improve collaboration and task management in resuscitation cases. 
+      We conducted a field study where medical students performed resuscitation scenarios, with one healthcare worker using a HoloLens 2 device to determine whether our virtual environment improved time management. 
+      We also focused on understanding how individuals interacted with the user interface of the augmented reality device and the virtual environment. 
+      Despite challenges in data collection, our findings provide valuable user feedback and critical insights into experimental design, which are essential for the successful implementation of AR technology in future studies.`,
+    },    
     {
       title: "Forest Bathing: Realism",
       image: `${process.env.PUBLIC_URL}/images/Projects/RealismVertical.PNG`,
-      date: "2022 to 2023",
-      description: `This is phase two of an ongoing project that I worked on with Rachel Masters during my undergrad.
-      Phase one observed biomass where I got to be a participant, whereas, phase two took it a step further by observing realism.
-      Realism is a characteristic of virtual enviornments that can influence user restorativeness.
-      This project is my first published paper where I am featured as second author!`,
-    },
+      date: "May 2022 to May 2024",
+      description: `This is phase two of an ongoing project that I worked on with Rachel Masters during my undergraduate degree.
+      Phase one focused on biomass, where I had the opportunity to participate, while phase two took it further by exploring realism.
+      Realism is a characteristic of virtual environments that can influence user restorativeness.
+      This project marks my first published paper, in which I am featured as the second author!`,
+    },    
     {
       title: "Virtual Reality Hackathon",
       image: `${process.env.PUBLIC_URL}/images/Projects/VRHackathon.jpg`,
       date: "November 2022",
-      description: `One of the first events I participated in with members from the NUILab was CSU's VR Hackathon. 
-      My group placed 2nd with our complex virtual enviornment focused on creating a mindfulness program to improve overall well-being and emotion regulation.
-      Each participant in my group designed their own environment, mine being focused on controlled breathing, which were all connected in a home screen environment where users can pick which mindfulness task they wanted to partake in.
-      During this project I spent several hours of a weekend getting to know my group and learning skills to work together in a unique environment.
-      <a href="https://source.colostate.edu/virtual-reality-challenge-winners-announced/" target="_blank" rel="noopener noreferrer" = >Learn more here!</a>',`,
+      description: `One of the first events I participated in with members of the Natural User Interaction Lab was Colorado State University's Virtual Reality Hackathon. 
+      My group placed second with our complex virtual environment, which focused on creating a mindfulness program to improve overall well-being and emotion regulation.
+      Each participant in my group designed their own environment, mine being focused on controlled breathing. All the environments were connected in a home screen where users could select the mindfulness task they wanted to participate in.
+      During this project, I spent several hours over a weekend getting to know my group and developing the skills to work together in a unique environment. Learn more here!`,
     },
     {
       title: "Judgment of Learning (Math Recall) Study",
       image: `${process.env.PUBLIC_URL}/images/Projects/BehavioralSciencesBuilding.jpg`,
       date: "January 2021 to December 2021",
-      description: `While my first 6 months on this project was essentially getting adjusted to being a research assistant, the second half I got to help run experiments.
-      This lab is where I first became CITI certified and learned the ins and outs of performing a research experiment.
-      The study I ran participants on was pretty automated where I specifically around to get users started and to help with any problems that arose.
-      I did work with the participants to collect consent and demongraphic forms, and to later direct them to the computer where the math task would take place.`,
-    }
+      description: `While the first six months of this project involved getting acclimated to my role as a research assistant, during the second half, I had the opportunity to help run experiments.
+      This lab is where I first became Collaborative Institutional Training Initiative (CITI) certified and learned the details of conducting a research experiment.
+      The study I ran was largely automated, and my main role was to guide participants through the consent form and instructions, lead them to the computer room to complete the task, and be available to assist with any issues that arose.`,
+    }    
   ];
 
   const handleProjectClick = (index) => {
