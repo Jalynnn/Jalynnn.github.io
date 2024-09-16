@@ -46,3 +46,5 @@ I also added some records in the Advanced Domain section of the Namecheap websit
 ## Using Analytics and Google's SEO
 
 * https://support.google.com/sites/answer/97459?hl=en&ref_topic=7184581&sjid=2132772151434578541-NC
+
+## HTTP vs. HTTPS
