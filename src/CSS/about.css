@@ -1,6 +1,6 @@
 .section-about {
     /* background-color: #742134; */
-    background-color: #587B7F;
+    background-color: #405759;
     padding: 20px;
     text-align: center;
     color: white;
@@ -93,6 +93,11 @@
 .lab-info a {
     /* color: #022943; */
     color: white;
+}
+
+.lab-about {
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 @media (max-width: 768px) {
