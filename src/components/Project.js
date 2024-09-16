@@ -95,7 +95,7 @@ const Projects = () => {
       During this project, I spent several hours over a weekend getting to know my group and developing the skills to work together in a unique environment. Learn more here!`,
     },
     {
-      title: "Judgment of Learning (Math Recall) Study",
+      title: "Judgments of Learning",
       image: `${process.env.PUBLIC_URL}/images/Projects/BehavioralSciencesBuilding.jpg`,
       date: "January 2021 to December 2021",
       description: `While the first six months of this project involved getting acclimated to my role as a research assistant, during the second half, I had the opportunity to help run experiments.

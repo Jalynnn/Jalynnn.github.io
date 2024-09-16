@@ -15,7 +15,7 @@
 .publications-heading {
     width: 100%;
     margin-bottom: 20px;
-    color: white;
+    color: #022943;
     text-align: center;
     padding: 20px;
     font-size: 4em;
@@ -32,7 +32,7 @@
 
 .publication-item {
     position: relative;
-    color: white;
+    color: #022943;
     margin-bottom: 30px;
     padding: 0 20px;
     max-width: 800px;
@@ -47,6 +47,6 @@
     top: 0;
     bottom: 0;
     width: 6px;
-    background-color: white;
+    background-color: #022943;
     transform: translateX(-50%);
 }

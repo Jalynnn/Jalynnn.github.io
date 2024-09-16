@@ -1,7 +1,7 @@
 .contact-heading {
     width: 100%;
     margin-bottom: 20px;
-    color: white;
+    color: #022943;
     text-align: center;
     padding: 20px;
     font-size: 4em;
@@ -51,6 +51,7 @@
     border-radius: 5px;
     font-family: Georgia;
     font-size: 15px;
+    color: #022943;
 }
 
 .section-contact .submit:hover {
@@ -63,7 +64,7 @@
 
 .section-contact .submit {
     background: white;
-    color: gray;
+    color: #022943;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
