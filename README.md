@@ -41,8 +41,8 @@ After using Google's [PageSpeed Insights]([url](https://pagespeed.web.dev/)) per
 
 I found my domain name by going through [Namecheap]([url](https://www.namecheap.com/)). I pay approximately $8 a year, having selected auto-renew, for an .org domain. I also used the Chrome Extension, [Honey]([url](https://chromewebstore.google.com/detail/honey-automatic-coupons-r/bmnlcjabgnpnenekpadlanbbkooimhnj?pli=1)), to help save me some cents.
 
-I also added some records in the Advanced Domain section of the Namecheap website after selecting "manage my domain" which appeared on the receipt page. Knowing which records to add is based on XXX.
-
+I also added some records in the Advanced Domain section of the Namecheap website after selecting "manage my domain," which appeared on the receipt page. Knowing which records to add is based on the DNS configuration recommended at the bottom of this [GitHub Page]([url](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)).
+ 
 ## Using Analytics and Google's SEO
 
 * https://support.google.com/sites/answer/97459?hl=en&ref_topic=7184581&sjid=2132772151434578541-NC
