@@ -6,10 +6,23 @@ const ProjectCard = ({ title, image, date, description, isSelected, handleClick 
     "Learn more here!",
     '<a href="https://source.colostate.edu/virtual-reality-challenge-winners-announced/" target="_blank" rel="noopener noreferrer">Learn more here!</a>'
   );
+
+  /* Improve assistive technologies */
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      handleClick();
+    }
+  }
   
   return (
     <div className="project-card">
-      <div className="project-image-container" onClick={handleClick}>
+      <div 
+        className="project-image-container" 
+        onClick={handleClick}
+        role="button"
+        tabIndex="0"
+        onKeyDown={handleKeyDown}
+      >
         <img src={image} alt={title} className="project-image" />
         <h3 className="project-title">{title}</h3>
       </div>

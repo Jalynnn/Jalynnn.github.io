@@ -2,6 +2,8 @@ import './CSS/index.css'
 
 import React from 'react';
 
+import { Helmet } from "react-helmet";
+
 import ScrollFeature from './components/ScrollFeature';
 
 import Header from './components/Header';
@@ -16,6 +18,13 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+
+      <Helmet>
+        <title>Jalynn Nicoly's Website</title>
+        <meta name="description" content="Explore Jalynn Nicoly's website featuring current publications, ongoing projects, and a contact form." />
+        <meta name="keywords" content="Jalynn Nicoly, website, portfolio, web development, human-computer interaction, research assistant, projects, React" />
+        <meta name="author" content="Jalynn Nicoly" />
+      </Helmet>
 
       <ScrollFeature />
 
