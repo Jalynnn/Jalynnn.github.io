@@ -35,11 +35,14 @@ Color Friendly
 
 Scans
 
-* https://accessibe.com/accessscan?website=https://jalynnn.github.io/
-
+After using Google's [PageSpeed Insights]([url](https://pagespeed.web.dev/)) performance and accessibility page, I made several changes to my website's code based on their recommendations. It could also be beneficial to go through some other websites such as [accessScan]([url](https://accessibe.com/accessscan)) which can provide some additional information on how to make your webstie more accessible.
 
 ## Changing the Domain Name $$
 
-## Using Analytics
+I found my domain name by going through [Namecheap]([url](https://www.namecheap.com/)). I pay approximately $8 a year, having selected auto-renew, for an .org domain. I also used the Chrome Extension, [Honey]([url](https://chromewebstore.google.com/detail/honey-automatic-coupons-r/bmnlcjabgnpnenekpadlanbbkooimhnj?pli=1)), to help save me some cents.
+
+I also added some records in the Advanced Domain section of the Namecheap website after selecting "manage my domain" which appeared on the receipt page. Knowing which records to add is based on XXX.
+
+## Using Analytics and Google's SEO
 
 * https://support.google.com/sites/answer/97459?hl=en&ref_topic=7184581&sjid=2132772151434578541-NC
