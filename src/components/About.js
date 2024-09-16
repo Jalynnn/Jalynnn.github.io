@@ -100,7 +100,7 @@ function About() {
 
             <div className="button-container">
                 <button onClick={() => openLink('pdfs/Resume.pdf')}>Preview CV</button>
-                <button onClick={() => openLink('pdfs/Jalynn Nicoly\'s Resume 9.14.2024.pdf')}>Preview Resume</button>
+                <button onClick={() => openLink('pdfs/Jalynn Nicoly\'s Resume 9.15.2024.pdf')}>Preview Resume</button>
             </div>
             
             <div className="button-container">
