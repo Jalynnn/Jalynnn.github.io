@@ -48,3 +48,5 @@ I also added some records in the Advanced Domain section of the Namecheap websit
 * https://support.google.com/sites/answer/97459?hl=en&ref_topic=7184581&sjid=2132772151434578541-NC
 
 ## HTTP vs. HTTPS
+
+Make sure to enable HTTPS in the GitHub Settings. It would be helpful to refer to this GitHub page as well: "[Securing your GitHub Pages site with HTTPS.]([url](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https))"
