@@ -34,7 +34,7 @@ function About() {
 
             <ul className="research-labs">
                 <div className = 'lab'>
-                    <img src={`${process.env.PUBLIC_URL}/images/Labs/SHINELabBlue.png`} alt="SHINELab Logo" className="lab-imgs"/>
+                    <img src={`${process.env.PUBLIC_URL}/images/Labs/SHINELabBlue.PNG`} alt="SHINELab Logo" className="lab-imgs"/>
                     <div className='lab-info'>
                         <p>
                             <a href="https://www.colorado.edu/lab/shine/" target="_blank" rel="noopener noreferrer"><strong>SHINELab</strong></a>
