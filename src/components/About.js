@@ -18,9 +18,9 @@ function About() {
                 />
                 <div className="about-text">
                     <div className="about-text-header">
-                        <p>
+                        <h2>
                             Welcome!
-                        </p>
+                        </h2>
                     </div>
                     <p>
                         I am an aspiring researcher pursuing my Ph.D. at the <strong>University of Colorado Boulder</strong> and a recent graduate with my Bachelor's degree from <strong>Colorado State University</strong>, both of which are in the <strong>Computer Science</strong> field. 
