@@ -22,4 +22,24 @@ Note that you do not modify or add to GH pages. Make your changes in main/master
 
 Running this anytime will apply your changes to the public page
 
+## Accessibility
+
+Color Friendly
+
+* https://www.youtube.com/watch?v=3xxrsF5tYEE
+* https://coolors.co/gradient-maker/4a9b7f-0a3431?position=43,100&opacity=100,100&type=linear&rotation=90
+* https://coolors.co/587b7f-022943-ccdbdc-6a0136-bfab25
+* https://leonardocolor.io/#
+* https://leonardocolor.io/scales.html#
+* Color Contrast: https://dequeuniversity.com/rules/axe/4.9/color-contrast
+
+Scans
+
+* https://accessibe.com/accessscan?website=https://jalynnn.github.io/
+
+
 ## Changing the Domain Name $$
+
+## Using Analytics
+
+* https://support.google.com/sites/answer/97459?hl=en&ref_topic=7184581&sjid=2132772151434578541-NC
