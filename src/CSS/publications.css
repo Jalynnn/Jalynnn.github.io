@@ -50,3 +50,13 @@
     background-color: #022943;
     transform: translateX(-50%);
 }
+
+@media (max-width: 768px) {
+    .publications-heading {
+        font-size: 2em;
+    }
+
+    .section-publications {
+        padding: 10px;
+    }
+}

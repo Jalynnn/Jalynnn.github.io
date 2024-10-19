@@ -77,3 +77,9 @@
         max-width: 400px;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 2em; /* Adjust the size for smaller screens */
+    }
+}

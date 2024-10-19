@@ -49,7 +49,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Cognitive Workload within Virtual Reality",
+      title: "Measuring Cognitive Workload in VR with fNIRS",
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
       description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 

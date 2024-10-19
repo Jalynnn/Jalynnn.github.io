@@ -107,6 +107,10 @@
         flex-direction: column;
     }
 
+    .about-heading {
+        font-size: 2em; /* Adjust the size for smaller screens */
+    }
+
     .profile-photo {
         width: 100%;
         max-width: 350px;
