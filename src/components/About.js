@@ -43,7 +43,7 @@ function About() {
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <a href="https://www.colorado.edu/ics/leanne-hirshfield/" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab" style={{ color: 'white' }}><u>Leanne Hirshfields'</u></a> lab has already brought me in as one of their own, starting strong with a project funded by the NAVY, introducing me to the world of brain signal measuring devices!
+                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <a href="https://www.colorado.edu/ics/leanne-hirshfield/" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab" style={{ color: 'white' }}><u>Leanne Hirshfields'</u></a> lab has already brought me in as one of their own, starting strong with a project funded by the Office of Naval Research, introducing me to the world of brain signal measuring devices!
                             </p>
                         </div>
                     </div>
