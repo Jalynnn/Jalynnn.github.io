@@ -99,8 +99,8 @@ function About() {
             </ul>
 
             <div className="button-container">
-                <button onClick={() => openLink('pdfs/Jalynn_Nicoly_s_CV_10_16_2024 (1).pdf')}>Preview CV</button>
-                <button onClick={() => openLink('pdfs/Jalynn Nicoly\'s Resume 9.15.2024.pdf')}>Preview Resume</button>
+                <button onClick={() => openLink('pdfs/Jalynn_Nicoly_s_CV_09.12.2025.pdf')}>Preview CV</button>
+                <button onClick={() => openLink('pdfs/Jalynn_Nicoly_Resume_9.12.2025.pdf')}>Preview Resume</button>
             </div>
             
             <div className="button-container">
