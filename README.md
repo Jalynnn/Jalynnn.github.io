@@ -70,3 +70,8 @@ Copy https://www.jalynn-nicoly.org/sitemap.xml into https://search.google.com/se
 ## HTTP vs. HTTPS
 
 Make sure to enable HTTPS in the GitHub Settings. It would be helpful to refer to this GitHub page as well: "[Securing your GitHub Pages site with HTTPS.]([url](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https))"
+
+## Comands
+
+npm start to run locally at http://localhost:3000/
+
