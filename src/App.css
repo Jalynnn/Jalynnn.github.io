@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -35,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Dark Mode */
+/* App.css - DELETE your old :root and body blocks and use this */
+
+body {
+    /* Default (Dark Mode since it's your favorite) */
+    --bg-main: #000000;
+    --text-main: #ffffff;
+    
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Explicitly swap when the class is removed by your toggle */
+body:not(.dark-mode) {
+    --bg-main: #ffffff;
+    --text-main: #022943;
+}
+
+/* Fallback for the class specifically */
+body.dark-mode {
+    --bg-main: #000000;
+    --text-main: #ffffff;
 }

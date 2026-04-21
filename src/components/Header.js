@@ -1,14 +1,25 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../CSS/Header.css';
 
-function Header() {
+function Header({ isDarkMode, setIsDarkMode }) {
 
     const [isNavOpen, setNavOpen] = useState(false);
+    // const [isDarkMode, setIsDarkMode] = useState(true);
+    // relocated to app.js
 
     const toggleNav = () => setNavOpen(!isNavOpen);
 
     // Once an item is clicked on, it closes the nav
     const closeNav = () => setNavOpen(false);
+
+    useEffect(() => {
+        // console.log("Dark mode is:", isDarkMode);
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }, [isDarkMode]);
 
     return (
         <header className="header">
@@ -31,6 +42,17 @@ function Header() {
                     <li><a href="#contact" onClick={closeNav}>Contact</a></li>
                 </ul>
             </nav>
+
+            <div className={`theme-switch-wrapper ${isDarkMode ? 'dark' : 'light'}`}>
+                <button 
+                    className="theme-switch-track" 
+                    onClick={() => setIsDarkMode(!isDarkMode)}
+                    aria-label="Toggle theme"
+                >
+                    <div className="theme-switch-thumb"></div>
+                </button>
+            </div>
+
         </header>
     );
 }

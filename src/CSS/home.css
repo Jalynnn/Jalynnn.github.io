@@ -2,8 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scroll */
+    /* background-color: #000; */
+    /* z-index: 2; */
     box-sizing: border-box;
 }
+
+/* Home.css */
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -12,28 +16,39 @@ html, body {
 .section-home {
     position: relative;
     width: 100vw; /* Use viewport width to ensure full width without overflow */
-    height: 100vh;
+    /* height: 100vh; */
+    height: 30vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Dark Mode Toggle */
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: all 0.4s ease;  
 }
 
 #bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw; /* Set width to viewport width to prevent overflow */
-    height: 100vh; /* Set height to viewport height */
+    width: 30vw; /* Set width to viewport width to prevent overflow */
+    height: 30vh; /* Set height to viewport height */
     object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    /* transform: translate(-50%, -50%); */
+    transform: translate(60%,-20%);
+    z-index: 1;
 }
 
 .section-home .content {
     position: relative;
     z-index: 1;
-    color: white;
+    /* color: white; */
+
+    /* Dark Mode Toggle */
+    color: var(--text-main);
+
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
@@ -41,7 +56,7 @@ html, body {
 
 .section-home .content h2 {
     font-size: 2.5em;
-    margin-top: -40px;
+    margin-top: 50px;
 }
 
 .section-home .content p {

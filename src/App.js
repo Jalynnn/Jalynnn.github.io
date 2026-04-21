@@ -1,6 +1,7 @@
 import './CSS/index.css'
 
-import React from 'react';
+// import React from 'react';
+import React, {useState} from 'react';
 
 import { Helmet } from "react-helmet";
 
@@ -16,9 +17,10 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
   return (
     <div className="App">
-
       <Helmet>
         <title>Jalynn Nicoly's Website</title>
         <meta name="description" content="Explore Jalynn Nicoly's website featuring current publications, ongoing projects, and a contact form." />
@@ -28,8 +30,14 @@ function App() {
 
       <ScrollFeature />
 
-      <Header />
-      <Home />
+      {/* <Header /> */}
+      {/* Pass the toggle function to the Header */}
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+
+      {/* Pass the value to Home so it can swap the video */}
+      <Home isDarkMode={isDarkMode} />
+      {/* <Home /> */}
+      
       <About />
       <Publications />
       <Project />

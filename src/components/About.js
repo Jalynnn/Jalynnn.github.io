@@ -9,7 +9,7 @@ function About() {
 
     return (
         <section id="about" className="section-about">
-            <h2 className="about-heading">About Jalynn</h2>
+            <h2 className="about-heading">Jalynn Nicoly</h2>
             <div className="about-content">
                 <img 
                     src={`${process.env.PUBLIC_URL}/images/1724083881047 (1).jpg`} 

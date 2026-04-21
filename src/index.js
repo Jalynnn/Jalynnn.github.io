@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import './CSS/Header.css';
+import './CSS/Home.css';
+import './App.css'; // App.css should be LAST so it has the final say
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

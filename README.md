@@ -75,3 +75,6 @@ Make sure to enable HTTPS in the GitHub Settings. It would be helpful to refer t
 
 npm start to run locally at http://localhost:3000/
 
+pushing to github updates the source code but not the live website
+
+npm run deply to update live website

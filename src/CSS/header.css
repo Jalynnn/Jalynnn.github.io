@@ -6,6 +6,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+
+    /* display:flex;
+    align-items:center; */
 }
 
 nav ul {
@@ -69,5 +72,56 @@ nav ul li a:hover {
         font-size: 18px;
         width: 100%;
         display: block;
+    }
+}
+
+/* Dark Mode Toggle */
+
+/* The background pill shape */
+.theme-switch-track {
+    width: 50px;
+    height: 26px;
+    background-color: white; /* Default Black */
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* The moving circle (the thumb) */
+.theme-switch-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #022943;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Styles when Dark Mode is active */
+.dark .theme-switch-track {
+    background-color: black; /* That orange/amber color from your image */
+}
+
+.dark .theme-switch-thumb {
+    /* Moves the circle to the right */
+    transform: translateX(22px);
+    background-color: white; /* Makes the inner circle dark like your image */
+}
+
+.theme-switch-wrapper {
+    position: absolute;
+    right: 30px; /* Adjust this to move it further left or right */
+    top: 50%;
+    transform: translateY(-50%); /* Perfectly centers it vertically */
+}
+
+/* Make sure the toggle isn't hidden on mobile */
+@media (max-width: 768px) {
+    .theme-switch-wrapper {
+        right: 15px; /* Tighter to the edge on small screens */
     }
 }
