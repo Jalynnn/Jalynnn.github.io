@@ -136,3 +136,29 @@
         margin-right: auto;
     }
 }
+
+/* Changed block text to bullets */
+
+.about-list {
+    list-style-type: none; /* Removes the default black dot */
+    padding: 0;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 25px; /* Space for the custom bullet */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+/* Create a custom "research-style" bullet (like a small cyan square or dash) */
+.about-list li::before {
+    content: "▪"; /* You can use a dash "-" or a dot "•" */
+    position: absolute;
+    left: 0;
+    color: var(--accent); /* Use your Cyan/Blue accent color */
+    font-weight: bold;
+}
