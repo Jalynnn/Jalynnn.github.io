@@ -75,3 +75,42 @@ html, body {
         font-size: 1em;
     }
 }
+
+/* Video */
+
+/* Base style for both videos */
+.bg-video {
+    position: absolute;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out; /* Match your header fade speed */
+    z-index: 1;
+}
+
+/* Visibility Toggles */
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* DARK VIDEO POSITION (Default) */
+.dark-vid-style {
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vh;
+    transform: translate(60%, -20%);
+}
+
+/* LIGHT VIDEO POSITION (Customize this!) */
+.light-vid-style {
+    top: 30%;      /* Move it up */
+    left: 0%;     /* Move it left */
+    width: 20vw;   /* Different size */
+    height: 20vh;
+    transform: none; /* Reset the transform if needed */
+}
