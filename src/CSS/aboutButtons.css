@@ -9,13 +9,15 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #022943;
+    /* background-color: #022943; */
+    background-color: var(--about-buttons-background);
     color: white;
     transition: background-color 0.3s;
 }
 
 .button-container button:hover {
     background-color: #233f52;
+    /* background-color: var(--about-buttons-background); */
 }
 
 .button-container button:focus {

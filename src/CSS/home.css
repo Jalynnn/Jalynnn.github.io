@@ -17,7 +17,7 @@ html, body {
     position: relative;
     width: 100vw; /* Use viewport width to ensure full width without overflow */
     /* height: 100vh; */
-    height: 30vh;
+    height: 40vh;
     overflow: hidden;
     display: flex;
     justify-content: center;

@@ -37,11 +37,11 @@
   }
 }
 
-/* Dark Mode */
-/* App.css - DELETE your old :root and body blocks and use this */
+/* ================================== DARK MODE ================================== */
 
+/* Default is dark mode */
 body {
-    /* Default (Dark Mode since it's your favorite) */
+    /* Header */
     --bg-main: #000000;
     --text-main: #ffffff;
     
@@ -52,23 +52,38 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Explicitly swap when the class is removed by your toggle */
+/* LIGHT MODE */
+
 body:not(.dark-mode) {
+    /* Unknown - Originals for Header - Used? */
     --bg-main: #ffffff;
     --text-main: #022943;
 
-    /* --header-main: #022943; */
-
-    /* --header-bg-transparent: rgba(255, 255, 255, 0.7);
-    --header-border: rgba(0, 0, 0, 0.1); */
-
-    --header-bg-transparent: rgba(2, 41, 67, 0.85); 
+    /* Header */
+    --header-bg-transparent: rgba(160, 201, 228, 0.7);
     --header-border: rgba(255, 255, 255, 0.2);
-    --header-text: #ffffff;
+    --header-text: #022943;
+
+    /* About Photo Border */
+    --about-border: #022943;
+
+    /* About Background */
+    --about-background: #A0C9E4;
+
+    /* About Text Color */
+    --about-text: #022943;
+
+    /* About Button Background */
+    --about-buttons-background: black;
+
+    /* About Hypertext Color */
+    --about-lab-hypertext: #0b7f96;
 }
 
-/* Fallback for the class specifically */
+/* DARK MODE */
+
 body.dark-mode {
+    /* Header */
     --bg-main: #000000;
     --text-main: #ffffff;
 
@@ -77,6 +92,11 @@ body.dark-mode {
     --header-border: rgba(255, 255, 255, 0.1);
     --header-text: #ffffff;
 
-    --about-border: #405759;
+    /* --about-border: #405759; */
+    --about-border: black;
     --about-background: #022943;
+
+    --about-buttons-background: black;
+
+    --about-lab-hypertext: #A0C9E4;
 }

@@ -41,7 +41,7 @@
     margin-bottom: 20px;
     text-align: left;
     overflow: hidden;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .project-image-container {
@@ -82,24 +82,27 @@
 
 .project-details-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
+    /* gap: 30px; */
 }
 
 .project-details-image {
-    width: 100%; /* Ensure image fits container */
-    max-width: 200px; /* Adjust as needed */
+    width: 35%; /* Ensure image fits container */
+    max-width: 300px; /* Adjust as needed */
     height: auto;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .project-details-text {
     text-align: center;
+    color: black;
+    font-size: 17px;
 }
 
 .project-date {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: -10px;
     margin-bottom: 5px;
     color: gray;
@@ -111,7 +114,7 @@
     right: 10px;
     background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
     color: #333;
 }
@@ -164,7 +167,7 @@
     }
 
     .close-button {
-        font-size: 1.2em; /* Make close button smaller */
+        font-size: 2em; /* Make close button smaller */
         top: 5px;
         right: 5px;
     }
@@ -185,7 +188,7 @@
     }
 
     .close-button {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .project-card {

@@ -31,24 +31,24 @@ function About() {
                     </p> */}
                     <ul className="about-list">
                         <li>
-                            <strong>Ph.D. Student</strong> at CU Boulder researching how <strong>neuro-physiological signals</strong> enhance VR/AR environments.
+                            <strong>Ph.D. Student</strong> at the University of Colorado Boulder researching how <strong>neurological signals</strong> enhance virtual and augmented reality environments.
                         </li>
                         <li>
-                            Background in <strong>Psychology</strong> and human behavior, originally at <strong>Colorado State University</strong>.
+                            Completed undergraduate studies at <strong>Colorado State University</strong> originating with a background in <strong>Psychology</strong> and human behavior, and later transferred to <strong>Computer Science</strong>.
                         </li>
                         <li>
-                            Ongoing <strong>Graduate Instructor</strong> for Introduction to Coding in C++ at CU Boulder.
+                            <strong>Graduate Instructor</strong> ongoing for two semesters teaching Introduction to Coding in C++ at the University of Colorado Boulder.
                         </li>
                         <li>
-                            <strong>Four years of experience</strong> across multiple specialized research labs:
+                            Developed <strong>six years of experience</strong> across multiple specialized research labs seen below.
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <h4>
+            <h3 className="keywords">
                 Keywords: Human-Computer Interaction, Brain-Computer Interfaces, Neuroadaptive Systems, Virtual & Augmented Reality
-            </h4>
+            </h3>
 
             <div className="button-container">
                 <button onClick={() => openLink('pdfs/Jalynn_Nicoly_CV_042026.pdf')}>CV</button>
@@ -61,12 +61,12 @@ function About() {
                         <img src={`${process.env.PUBLIC_URL}/images/Labs/SHINELabBlue.PNG`} alt="SHINELab Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
-                                <a href="https://www.colorado.edu/lab/shine/" target="_blank" rel="noopener noreferrer" aria-label="SHINELab. Opens in a new tab"style={{ color: '#00d4ff' }}><strong>SHINELab</strong></a>
+                                <a href="https://www.colorado.edu/lab/shine/" target="_blank" rel="noopener noreferrer" aria-label="SHINELab. Opens in a new tab"style={{ color: 'var(--about-lab-hypertext)' }}><strong>SHINELab</strong></a>
                             </p>
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <a href="https://www.colorado.edu/ics/leanne-hirshfield/" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab" style={{ color: '#00d4ff' }}><u>Leanne Hirshfields'</u></a> lab has already brought me in as one of their own, starting strong with a project funded by the Office of Naval Research, introducing me to the world of brain signal measuring devices!
+                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <a href="https://www.colorado.edu/ics/leanne-hirshfield/" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab" style={{ color: 'var(--about-lab-hypertext)' }}><u>Leanne Hirshfields'</u></a> lab has already brought me in as one of their own, starting strong with a project funded by the Office of Naval Research, introducing me to the world of brain signal measuring devices!
                             </p>
                         </div>
                     </div>
@@ -77,12 +77,12 @@ function About() {
                         <img src={`${process.env.PUBLIC_URL}/images/Labs/NUILab.png`} alt="NUILab Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
-                                <a href="https://nuilab.org/" target="_blank" rel="noopener noreferrer" aria-label="NUILab. Opens in a new tab"style={{ color: '#00d4ff' }}><strong>NUILab</strong></a>
+                                <a href="https://nuilab.org/" target="_blank" rel="noopener noreferrer" aria-label="NUILab. Opens in a new tab"style={{ color: 'var(--about-lab-hypertext)' }}><strong>NUILab</strong></a>
                             </p>
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in <a href="https://compsci.colostate.edu/person/?id=22550A7530193FD205613DD09DD2EE6F&sq=t/" rel="noopener noreferrer" target="_blank" aria-label="Francisco Ortega's page. Opens in a new tab" style={{ color: '#00d4ff' }}><u>Francisco Ortega's</u></a> research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP 2024 and a first-authorship with ACM SAP 2024.
+                                <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in <a href="https://compsci.colostate.edu/person/?id=22550A7530193FD205613DD09DD2EE6F&sq=t/" rel="noopener noreferrer" target="_blank" aria-label="Francisco Ortega's page. Opens in a new tab" style={{ color: 'var(--about-lab-hypertext)' }}><u>Francisco Ortega's</u></a> research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP 2024 and a first-authorship with ACM SAP 2024.
                             </p>
                         </div>
                     </div>
@@ -93,12 +93,12 @@ function About() {
                         <img src={`${process.env.PUBLIC_URL}/images/Labs/AIRLab.png`} alt="AIRLab Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
-                                <a href="https://liquetaylor.wixstudio.io/airlab/" target="_blank" rel="noopener noreferrer" aria-label="AIRLab. Opens in a new tab"style={{ color: '#00d4ff' }}><strong>AIRLab</strong></a>
+                                <a href="https://liquetaylor.wixstudio.io/airlab/" target="_blank" rel="noopener noreferrer" aria-label="AIRLab. Opens in a new tab"style={{ color: 'var(--about-lab-hypertext)' }}><strong>AIRLab</strong></a>
                             </p>
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with  <a href="https://www.angeliquemtaylor.com/" rel="noopener noreferrer" target="_blank" aria-label="Angelique Taylor's page. Opens in a new tab" style={{ color: '#00d4ff'}}><u>Angelique Taylor</u></a>, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
+                                <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with  <a href="https://www.angeliquemtaylor.com/" rel="noopener noreferrer" target="_blank" aria-label="Angelique Taylor's page. Opens in a new tab" style={{ color: 'var(--about-lab-hypertext)'}}><u>Angelique Taylor</u></a>, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
                             </p>
                         </div>
                     </div>
@@ -109,12 +109,12 @@ function About() {
                         <img src={`${process.env.PUBLIC_URL}/images/Labs/CSULogo.png`} alt="Memory Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
-                                <a href="https://sites.google.com/site/rhodesmemorylab/" target="_blank" rel="noopener noreferrer" aria-label="Memory Lab. Opens in a new tab"style={{ color: '#00d4ff' }}><strong>Memory Lab</strong></a>
+                                <a href="https://sites.google.com/site/rhodesmemorylab/" target="_blank" rel="noopener noreferrer" aria-label="Memory Lab. Opens in a new tab"style={{ color: 'var(--about-lab-hypertext)' }}><strong>Memory Lab</strong></a>
                             </p>
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Memory and Metacognition Lab:</strong> Under the mentorship of <a href="https://psywebserv.psych.colostate.edu/psylist/facdetail.php?FirstName=Matthew&LastName=Rhodes/" rel="noopener noreferrer" target="_blank" aria-label="Matthew Rhodes's page. Opens in a new tab" style={{ color: '#00d4ff' }}><u>Matthew Rhodes</u></a>, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
+                                <strong>Memory and Metacognition Lab:</strong> Under the mentorship of <a href="https://psywebserv.psych.colostate.edu/psylist/facdetail.php?FirstName=Matthew&LastName=Rhodes/" rel="noopener noreferrer" target="_blank" aria-label="Matthew Rhodes's page. Opens in a new tab" style={{ color: 'var(--about-lab-hypertext)' }}><u>Matthew Rhodes</u></a>, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
                             </p>
                         </div>
                     </div>

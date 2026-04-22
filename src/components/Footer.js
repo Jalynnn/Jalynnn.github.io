@@ -12,7 +12,7 @@ function Footer() {
             </div>
             <div className="Extra">
                 <p>All rights reserved, 2024 Jalynn B. Nicoly</p>
-                <p>Last Updated: April 20nd, 2026</p>
+                <p>Last Updated: April 21st, 2026</p>
             </div>
         </div>
     );

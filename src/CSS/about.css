@@ -1,19 +1,8 @@
 .section-about {
-    /* background-color: #742134; */
-    /* background-color: #405759; */
     background-color: var(--about-background);
     padding: 20px;
     text-align: center;
     color: white;
-}
-
-.about-heading {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-size: 4em;
-    color: white;
-    text-align: center;
 }
 
 .about-content {
@@ -21,16 +10,11 @@
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 0 7%;
-}
 
-.profile-photo {
-    width: 325px;
-    height: 325px;
-    border-radius: 50%;
-    border: 6px solid var(--about-border);
-    flex-shrink: 0;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /* padding: 0 7%; */
 }
 
 .about-text {
@@ -42,11 +26,56 @@
     text-align: justify;
 }
 
+/* ================================== PROFILE PHOTO ================================== */
+
+.profile-photo {
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    border: 6px solid var(--about-border);
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ================================== REMOVED HEADER ================================== */
+
+.about-heading {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
 .about-text-header {
     font-size: 24px;
     margin-top: -15px;
     margin-bottom: 5px;
 }
+
+/* ================================== KEYWORDS ================================== */
+
+.keywords {
+    /* max-width: 1200px;     */
+    /* Matches your about-content and research-labs */
+
+    /* margin: 30px auto;  */
+    /* Centers it and adds some breathing room top/bottom */
+
+    /* padding: 0 20px;    */
+    /* Prevents text from touching edges on small screens */
+
+    color: var(--about-text);
+
+    text-align: center;   
+    /* Keep it centered within that 1200px block */
+
+    line-height: 1.6;     
+    /* Better readability for a list of words */
+}
+
+/* ================================== RESEARCH LABS ================================== */
 
 .research-labs {
     display: grid;
@@ -56,6 +85,7 @@
     padding: 0 7%; /* Adjust padding to set distance from left and right */
     text-align: justify; /* Ensure text is left-aligned within the padding */
     font-size: 16px;
+    color: var(--about-text);
 }
 
 .lab {
@@ -72,7 +102,9 @@
 }
 
 .research-labs li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px; 
+    /* Add space between list items */
+
     padding: 20px;
     list-style-type: none;
 }
@@ -93,7 +125,6 @@
 }
 
 .lab-info a {
-    /* color: #022943; */
     color: white;
 }
 
@@ -138,10 +169,12 @@
     }
 }
 
-/* Changed block text to bullets */
+/* ================================== BULLET POINTS ================================== */
 
 .about-list {
-    list-style-type: none; /* Removes the default black dot */
+    list-style-type: none; 
+    /* Removes the default black dot */
+
     padding: 0;
     margin-top: 20px;
     padding-left: 20px;
@@ -149,17 +182,20 @@
 
 .about-list li {
     position: relative;
-    padding-left: 25px; /* Space for the custom bullet */
-    margin-bottom: 15px;
+    padding-left: 25px; 
+    /* Space for the custom bullet */
+
+    margin-bottom: 5px;
     line-height: 1.6;
     color: var(--text-main);
 }
 
-/* Create a custom "research-style" bullet (like a small cyan square or dash) */
 .about-list li::before {
-    content: "▪"; /* You can use a dash "-" or a dot "•" */
+    content: "▪"; 
+    /* You can use a dash "-" or a dot "•" */
+
     position: absolute;
     left: 0;
-    color: var(--accent); /* Use your Cyan/Blue accent color */
+    color: var(--accent);
     font-weight: bold;
 }
