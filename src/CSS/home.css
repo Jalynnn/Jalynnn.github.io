@@ -82,7 +82,8 @@ html, body {
 .bg-video {
     position: absolute;
     object-fit: cover;
-    transition: opacity 0.4s ease-in-out; /* Match your header fade speed */
+    /* transition: opacity 0.4s ease-in-out;  */
+    /* Match your header fade speed */
     z-index: 1;
 }
 
@@ -90,11 +91,13 @@ html, body {
 .visible {
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .hidden {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0s;
 }
 
 /* DARK VIDEO POSITION (Default) */
@@ -109,7 +112,7 @@ html, body {
 /* LIGHT VIDEO POSITION (Customize this!) */
 .light-vid-style {
     top: 30%;      /* Move it up */
-    left: 0%;     /* Move it left */
+    left: 5%;     /* Move it left */
     width: 20vw;   /* Different size */
     height: 20vh;
     transform: none; /* Reset the transform if needed */

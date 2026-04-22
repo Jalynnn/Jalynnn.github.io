@@ -1,6 +1,7 @@
 .section-about {
     /* background-color: #742134; */
-    background-color: #405759;
+    /* background-color: #405759; */
+    background-color: var(--about-background);
     padding: 20px;
     text-align: center;
     color: white;
@@ -27,7 +28,7 @@
     width: 325px;
     height: 325px;
     border-radius: 50%;
-    border: 6px solid #022943;
+    border: 6px solid var(--about-border);
     flex-shrink: 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }

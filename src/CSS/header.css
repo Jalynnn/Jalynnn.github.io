@@ -1,23 +1,38 @@
 header {
-    background-color: #022943;
+    /* Glassmorphism Effect */
+    background-color: var(--header-bg-transparent); 
+    backdrop-filter: blur(10px); /* This is the "Glossy" secret */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    
+    /* Border gives it that sharp, "premium" edge */
+    /* border-bottom: 1px solid var(--header-border); */
+    
     color: #fff;
-    padding: 20px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 
-    display:flex;
-    justify-content: space-evenly;
-    align-items:center;
+    display: flex;
+    justify-content: space-between; /* Adjusted for your new Icon + Nav layout */
+    align-items: center;
     height: 70px;
+    /* padding: 0 5px; */
+    padding: 0 80px 0 30px; 
+    /* Space for absolute toggle on right */
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Pushes the UL to the right */
+    align-items: center;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    margin-right: 80px; /* Creates a gap between last link and the toggle */
 }
 
 nav ul li {
@@ -27,14 +42,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--header-text); /* Use the new variable */
     text-decoration: none;
     padding: 10px 20px;
     transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #233f52;
+    background-color: rgba(128, 128, 128, 0.15); /* Soft gray glow */
+    color: var(--accent); /* Your light blue color */
 }
 
 /* Designing with responsiveness (react) in mind */
@@ -43,7 +59,9 @@ nav ul li a:hover {
     display: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+
+@media (max-width: 950px) {
     .nav-toggle {
         display: block;
         background: none;
@@ -105,24 +123,35 @@ nav ul li a:hover {
 
 /* Styles when Dark Mode is active */
 .dark .theme-switch-track {
-    background-color: black; /* That orange/amber color from your image */
+    background-color: white; /* That orange/amber color from your image */
 }
 
 .dark .theme-switch-thumb {
     /* Moves the circle to the right */
     transform: translateX(22px);
-    background-color: white; /* Makes the inner circle dark like your image */
+    background-color: black; /* Makes the inner circle dark like your image */
 }
 
 .theme-switch-wrapper {
     position: absolute;
-    right: 30px; /* Adjust this to move it further left or right */
+    /* position: relative; */
+    right: 30px; 
+    /* Adjust this to move it further left or right */
     top: 50%;
-    transform: translateY(-50%); /* Perfectly centers it vertically */
+    transform: translateY(-50%); 
+    /* Perfectly centers it vertically */
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin-left: 20px; */
+
+    /* right: max(20px, calc((100vw - 1400px) / 2)); */
 }
 
 /* Make sure the toggle isn't hidden on mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) { */
+
+@media (max-width: 1050px) {
     .theme-switch-wrapper {
         right: 15px; /* Tighter to the edge on small screens */
     }
@@ -134,16 +163,34 @@ nav ul li a:hover {
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-left: max(20px, calc((90vw - 1400px) / 2));
 }
 
+/* This is the base size for icons WITHOUT a specific class (like your GitHub icon) */
 .social-icons img {
-    height: 24px; /* Adjust size as needed */
+    height: 50px; /* Try 30px for a balanced look */
     width: auto;
     transition: transform 0.3s ease;
-    /* filter: brightness(0) invert(1); Makes them white to match nav */
+}
+
+/* Use 'img' at the end to be ultra-specific */
+.social-icons img.linkedin-icon {
+    height: 45px !important; /* Adding !important just to test if it's a priority issue */
+    width: auto;
+    margin-right: -15px;
+}
+
+.social-icons img.orcid-icon {
+    height: 45px !important;
+    width: auto;
+    margin-left: -15px;
+}
+
+/* For the Github icon which has no class */
+.social-icons a img {
+    height: 45px;
 }
 
 .social-icons a:hover img {
     transform: scale(1.1);
-    /* filter: brightness(1); Shows original color on hover if desired */
 }

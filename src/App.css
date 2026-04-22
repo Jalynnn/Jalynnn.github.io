@@ -56,10 +56,27 @@ body {
 body:not(.dark-mode) {
     --bg-main: #ffffff;
     --text-main: #022943;
+
+    /* --header-main: #022943; */
+
+    /* --header-bg-transparent: rgba(255, 255, 255, 0.7);
+    --header-border: rgba(0, 0, 0, 0.1); */
+
+    --header-bg-transparent: rgba(2, 41, 67, 0.85); 
+    --header-border: rgba(255, 255, 255, 0.2);
+    --header-text: #ffffff;
 }
 
 /* Fallback for the class specifically */
 body.dark-mode {
     --bg-main: #000000;
     --text-main: #ffffff;
+
+    /* --header-main: #000000; */
+    --header-bg-transparent: rgba(0, 0, 0, 0.7);
+    --header-border: rgba(255, 255, 255, 0.1);
+    --header-text: #ffffff;
+
+    --about-border: #405759;
+    --about-background: #022943;
 }
