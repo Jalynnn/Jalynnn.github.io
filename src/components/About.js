@@ -47,7 +47,12 @@ function About() {
             </div>
 
             <h3 className="keywords">
-                Keywords: Human-Computer Interaction, Brain-Computer Interfaces, Neuroadaptive Systems, Virtual & Augmented Reality
+                Keywords: 
+                <a href="?filter=Human-Computer Interaction" className="keyword-link">Human-Computer Interaction</a>, 
+                <a href="?filter=Brain-Computer Interfaces" className="keyword-link">Brain-Computer Interfaces</a>,
+                <a href="?filter=Neuroadaptive Systems" className="keyword-link">Neuroadaptive Systems</a>, 
+                {/* Use %26 for the ampersand and %20 for spaces to be ultra-safe */}
+                <a href="?filter=Virtual%20%26%20Augmented%20Reality" className="keyword-link">Virtual & Augmented Reality</a>
             </h3>
 
             <div className="button-container">

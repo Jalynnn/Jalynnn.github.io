@@ -196,3 +196,66 @@
         max-width: 100%;
     }
 }
+
+/* ================================== FILTER ================================== */
+
+.filter-bar {
+    display: flex;
+    justify-content: center; /* Keeps them centered */
+    gap: 12px;
+    margin: 30px auto;
+    /* By reducing max-width slightly, you force a more balanced wrap */
+    max-width: 800px; 
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(160, 201, 228, 0.4); 
+    color: var(--text-main);
+    padding: 10px 22px; /* Slightly more padding for a better 'hit' area */
+    border-radius: 4px;
+    cursor: pointer;
+    
+    /* FONT FIX: Inherit from your headers */
+    font-family: inherit; 
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.filter-btn.active {
+    background: var(--header-bg-transparent); /* Your optimal blue */
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.filter-btn:hover:not(.active) {
+    background: rgba(160, 201, 228, 0.1);
+    border-color: var(--accent);
+}
+
+.filter-count {
+    margin-left: 8px;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.filter-btn.active .filter-count {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+}
+
+.filter-btn:first-child {
+    min-width: 120px; /* Makes 'All' a bit more prominent */
+    justify-content: center;
+}

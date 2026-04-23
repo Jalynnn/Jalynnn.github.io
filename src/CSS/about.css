@@ -199,3 +199,14 @@
     color: var(--accent);
     font-weight: bold;
 }
+
+/* ================================== KEYWORD LINKS ================================== */
+
+.keyword-link {
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+}
+.keyword-link:hover {
+    text-decoration: underline;
+}

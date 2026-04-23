@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../CSS/Project.css';
+
+const categories = ["All", "Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems", "Virtual & Augmented Reality"];
 
 const ProjectCard = ({ title, image, date, description, isSelected, handleClick }) => {
   const descriptionWithLink = description.replace(
@@ -45,11 +47,49 @@ const ProjectCard = ({ title, image, date, description, isSelected, handleClick 
 };
 
 const Projects = () => {
+
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  // useEffect(() => {
+  //   const params = new URLSearchParams(window.location.search);
+  //   const filterParam = params.get('filter');
+    
+  //   // If the URL has ?filter=BCI, set the active filter to that!
+  //   if (filterParam && categories.includes(filterParam)) {
+  //     setActiveFilter(filterParam);
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    const handleUrlChange = () => {
+      // 1. Look at the standard search (?filter=...)
+      const params = new URLSearchParams(window.location.search);
+      const filterParam = params.get('filter');
+      
+      if (filterParam && categories.includes(filterParam)) {
+        setActiveFilter(filterParam);
+        
+        // 2. We handle the scroll locally here! 
+        // This bypasses your problematic scrollToSection function.
+        const element = document.getElementById('projects');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    handleUrlChange();
+
+    // Listen for the back/forward buttons or link clicks
+    window.addEventListener('popstate', handleUrlChange);
+    return () => window.removeEventListener('popstate', handleUrlChange);
+  }, []);
 
   const projects = [
     {
       title: "Measuring Cognitive Workload in VR with fNIRS",
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
       description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
@@ -61,6 +101,7 @@ const Projects = () => {
     },    
     {
       title: "Interaction Cues Review",
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/CodingSheetVertical.PNG`,
       date: "August 2023 to Current",
       description: `For this project, another member and I are reviewing and analyzing over a hundred papers. 
@@ -71,6 +112,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Beauty and Movement",
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BeautyVertical.PNG`,
       date: "November 2022 to September 2024",
       description: `This was my primary project during the last two years of my undergraduate degree.
@@ -82,6 +124,7 @@ const Projects = () => {
     },    
     {
       title: "Augmented Reality for Healthcare Workers",
+      categories: ["Virtual & Augmented Reality"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BaseCamp.jpg`,
       date: "May 2023 to December 2023",
       description: `Innovative tools like augmented reality, when used by healthcare workers, have the potential to improve collaboration and task management in resuscitation cases. 
@@ -91,6 +134,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Realism",
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/RealismVertical.PNG`,
       date: "May 2022 to May 2024",
       description: `This is phase two of an ongoing project that I worked on with Rachel Masters during my undergraduate degree.
@@ -100,6 +144,7 @@ const Projects = () => {
     },    
     {
       title: "Virtual Reality Hackathon",
+      categories: ["Virtual & Augmented Reality"],
       image: `${process.env.PUBLIC_URL}/images/Projects/VRHackathon.jpg`,
       date: "November 2022",
       description: `One of the first events I participated in with members of the Natural User Interaction Lab was Colorado State University's Virtual Reality Hackathon. 
@@ -109,6 +154,7 @@ const Projects = () => {
     },
     {
       title: "Judgments of Learning",
+      categories: ["Brain-Computer Interfaces"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BehavioralSciencesBuilding.jpg`,
       date: "January 2021 to December 2021",
       description: `While the first six months of this project involved getting acclimated to my role as a research assistant, during the second half, I had the opportunity to help run experiments.
@@ -116,6 +162,9 @@ const Projects = () => {
       The study I ran was largely automated, and my main role was to guide participants through the consent form and instructions, lead them to the computer room to complete the task, and be available to assist with any issues that arose.`,
     }    
   ];
+
+  const filteredProjects = activeFilter === "All"
+    ? projects: projects.filter(p => p.categories.includes(activeFilter));
 
   const handleProjectClick = (index) => {
     // Open the clicked project, or close if it's already selected
@@ -131,9 +180,27 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section-projects" onClick={handleBackgroundClick}>
+
       <h2 className="projects-heading">Projects</h2>
+
+      {/* Filter Projects Logic */}
+      <div className = "filter-bar">
+        {categories.map(cat=> (
+          <button
+            key = {cat}
+            className = {`filter-btn ${activeFilter === cat ? 'active' : ''}`}
+            onClick={() => setActiveFilter(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="projects-container" onClick={(e) => e.stopPropagation()}> {/* Prevents background click when clicking inside the container */}
-        {projects.map((project, index) => (
+        {/* PURPOSE: Filter projects */}
+        {/* {projects.map((project, index) => ( */}
+
+        {filteredProjects.map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
