@@ -263,14 +263,6 @@
 
 /* ================================== SHOW MORE ================================== */
 
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* ADD THIS: Ensures the fade/button don't touch the cards */
-    padding-bottom: 40px; 
-}
-
 /* ADD THIS: The 'Smoke and Mirrors' that makes it look polished */
 .projects-fade-overlay {
     position: absolute;
@@ -318,4 +310,122 @@
 .projects-wrapper.expanded {
     max-height: 5000px; 
     /* Optional: hide the fade when expanded */
+}
+
+/* ================================== DIM THE CARDS ON HOVER ================================== */
+
+/* ==================== 1. THE GRID ANIMATIONS ==================== */
+
+/* Only allow dimming if NO project is open */
+.section-projects:not(.modal-open) .projects-container:has(.project-card:hover) .project-card {
+    filter: brightness(0.85);
+    /* This is the brightness of the cards when one is hovered on */
+    transition: filter 0.3s ease;
+}
+
+/* Only allow scaling if NO project is open */
+.section-projects:not(.modal-open) .project-card:hover {
+    filter: brightness(1) !important;
+    transform: scale(1.04);
+    z-index: 10;
+}
+
+/* ==================== 2. THE MASTER LOCK ==================== */
+
+/* When a modal is open, we freeze EVERYTHING in the background 
+   This prevents the 'crunch' and the 'lock' issues */
+.section-projects.modal-open .projects-container,
+.section-projects.modal-open .projects-wrapper,
+.section-projects.modal-open .project-card {
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+}
+
+/* ==================== 3. THE POPUP (LOCKED TO SCREEN) ==================== */
+
+.project-details {
+    /* Fixed is relative to the browser window */
+    position: fixed !important; 
+    
+    /* Perfect center of the glass */
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    
+    /* Use 'vw' and 'vh' so it ignores the card's width entirely */
+    width: 90vw !important;
+    max-width: 800px !important;
+    max-height: 85vh !important;
+    
+    background-color: white !important;
+    color: black !important;
+    z-index: 10000 !important;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    
+    display: flex !important;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.project-details-content {
+    overflow-y: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ==================== 2. THE DIMMING CURTAIN ==================== */
+
+/* This creates a dark 'curtain' behind the popup when it's open */
+.project-card.selected::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); 
+    /* this is background for entire website when pop up is up */
+    z-index: 9998; /* Just below the popup */
+    pointer-events: none; /* Let clicks pass through if needed */
+}
+
+/* Force the background cards to stay still when modal is open */
+.section-projects.modal-open .project-card {
+    transform: none !important;
+    transition: none !important;
+}
+
+/* ==================== 3. THE POPUP (STABLE & CENTERED) ==================== */
+
+.project-details {
+    position: fixed !important; 
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    
+    width: 90vw !important;
+    max-width: 800px !important;
+    max-height: 85vh !important;
+    
+    background-color: white !important;
+    color: black !important;
+    z-index: 10000 !important; /* Above the curtain */
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    
+    display: flex !important;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+/* Kill all filters on the card so the popup can stay fixed */
+.project-card.selected {
+    filter: none !important;
+    transform: none !important;
+    z-index: 9999;
+    overflow: visible !important;
 }

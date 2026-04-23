@@ -17,7 +17,10 @@ const ProjectCard = ({ title, image, date, description, isSelected, handleClick 
   }
   
   return (
-    <div className="project-card">
+    // HERE IS ONE OF TWO CHANGES FOR PROJECT DIM
+    // <div className="project-card">
+    <div className={`project-card ${isSelected ? 'selected' : ''}`}>
+
       <div 
         className="project-image-container" 
         onClick={handleClick}
@@ -28,6 +31,7 @@ const ProjectCard = ({ title, image, date, description, isSelected, handleClick 
         <img src={image} alt={title} className="project-image" />
         <h3 className="project-title">{title}</h3>
       </div>
+
       {isSelected && (
         <div className="project-details" onClick={(e) => e.stopPropagation()}> {/* Prevents background click */}
           <div className="project-details-content">
@@ -257,7 +261,9 @@ const Projects = () => {
   // );
 
   return (
-    <section id="projects" className="section-projects" onClick={handleBackgroundClick}>
+    // HERE IS ONE OF TWO CHANGES FOR PROJECT DIM
+    <section id="projects" className={`section-projects ${selectedProject !== null ? 'modal-open' : ''}`}>
+    {/* <section id="projects" className="section-projects" onClick={handleBackgroundClick}> */}
       <h2 className="projects-heading">Projects</h2>
 
       <div className="filter-bar">

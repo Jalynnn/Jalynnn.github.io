@@ -1,164 +1,28 @@
+/* ================================== VARIABLES ================================== */
+:root {
+    --header-height: 70px;
+    --accent: #A0C9E4;
+}
+
+/* ================================== GLOBAL HEADER ================================== */
 header {
-    /* Glassmorphism Effect */
     background-color: var(--header-bg-transparent); 
-    backdrop-filter: blur(10px); /* This is the "Glossy" secret */
-    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
-    
-    /* Border gives it that sharp, "premium" edge */
-    /* border-bottom: 1px solid var(--header-border); */
-    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between; /* Adjusted for your new Icon + Nav layout */
-    align-items: center;
     height: 70px;
-    /* padding: 0 5px; */
-    padding: 0 80px 0 30px; 
-    /* Space for absolute toggle on right */
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 80px 0 30px; /* Space for absolute toggle on right */
     transition: background-color 0.3s ease;
 }
 
-nav {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; /* Pushes the UL to the right */
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    margin-right: 80px; /* Creates a gap between last link and the toggle */
-}
-
-nav ul li {
-    display: inline;
-    width: 100%;
-    font-size: 20px;
-}
-
-nav ul li a {
-    color: var(--header-text); /* Use the new variable */
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: rgba(128, 128, 128, 0.15); /* Soft gray glow */
-    color: var(--accent); /* Your light blue color */
-}
-
-/* Designing with responsiveness (react) in mind */
-
-.nav-toggle {
-    display: none;
-}
-
-/* @media (max-width: 768px) { */
-
-@media (max-width: 950px) {
-    .nav-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-    }
-    
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-        width: 100%
-    }
-    
-    nav ul li a {
-        padding: 15px;
-        font-size: 18px;
-        width: 100%;
-        display: block;
-    }
-}
-
-/* Dark Mode Toggle */
-
-/* The background pill shape */
-.theme-switch-track {
-    width: 50px;
-    height: 26px;
-    background-color: white; /* Default Black */
-    border-radius: 50px;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0 4px;
-    transition: background-color 0.3s ease;
-}
-
-/* The moving circle (the thumb) */
-.theme-switch-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: #022943;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-/* Styles when Dark Mode is active */
-.dark .theme-switch-track {
-    background-color: white; /* That orange/amber color from your image */
-}
-
-.dark .theme-switch-thumb {
-    /* Moves the circle to the right */
-    transform: translateX(22px);
-    background-color: black; /* Makes the inner circle dark like your image */
-}
-
-.theme-switch-wrapper {
-    position: absolute;
-    /* position: relative; */
-    right: 30px; 
-    /* Adjust this to move it further left or right */
-    top: 50%;
-    transform: translateY(-50%); 
-    /* Perfectly centers it vertically */
-
-    /* display: flex; */
-    /* align-items: center; */
-    /* margin-left: 20px; */
-
-    /* right: max(20px, calc((100vw - 1400px) / 2)); */
-}
-
-/* Make sure the toggle isn't hidden on mobile */
-/* @media (max-width: 768px) { */
-
-@media (max-width: 1050px) {
-    .theme-switch-wrapper {
-        right: 15px; /* Tighter to the edge on small screens */
-    }
-}
-
-/* Social Icons Styling */
-
+/* ================================== DESKTOP SOCIAL ICONS ================================== */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -166,16 +30,14 @@ nav ul li a:hover {
     margin-left: max(20px, calc((90vw - 1400px) / 2));
 }
 
-/* This is the base size for icons WITHOUT a specific class (like your GitHub icon) */
 .social-icons img {
-    height: 50px; /* Try 30px for a balanced look */
+    height: 50px; 
     width: auto;
     transition: transform 0.3s ease;
 }
 
-/* Use 'img' at the end to be ultra-specific */
 .social-icons img.linkedin-icon {
-    height: 45px !important; /* Adding !important just to test if it's a priority issue */
+    height: 45px !important;
     width: auto;
     margin-right: -15px;
 }
@@ -186,11 +48,208 @@ nav ul li a:hover {
     margin-left: -15px;
 }
 
-/* For the Github icon which has no class */
 .social-icons a img {
     height: 45px;
 }
 
 .social-icons a:hover img {
     transform: scale(1.1);
+}
+
+/* ================================== DESKTOP NAVIGATION ================================== */
+.nav-toggle {
+    display: none !important; /* HARD GATE for Desktop */
+}
+
+/* Hide the mobile-only overlay on desktop entirely */
+.nav-overlay {
+    display: none;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 80px; 
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.15);
+    color: var(--accent);
+}
+
+/* ================================== THEME TOGGLE ================================== */
+.theme-switch-wrapper {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3000;
+}
+
+.theme-switch-track {
+    width: 50px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.theme-switch-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #022943;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark .theme-switch-thumb {
+    transform: translateX(22px);
+    background-color: black;
+}
+
+/* ================================== MOBILE RESPONSIVE ================================== */
+
+@media (max-width: 1050px) {
+    /* Hide desktop-only elements */
+    .social-icons, .desktop-nav {
+        display: none !important;
+    }
+
+    /* Show Mobile Hamburger */
+    .nav-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        font-size: 32px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 3001;
+        position: relative;
+    }
+    
+    .nav-overlay {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, 
+            rgba(0,0,0,0.9) 0%, 
+            rgba(0,0,0,0.9) 75%, 
+            rgba(0,0,0,0) 100%) !important;
+        
+        /* THE ALIGNMENT FIX */
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        
+        /* Adjust these for the 'Far Left' look */
+        padding-left: 0px;  
+        /* Fixed pixel value feels more stable than % */
+
+        padding-top: 100px;
+        /* Gives space below the hamburger/X */
+        
+        transform: translateX(-100%);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        z-index: 2500;
+        visibility: hidden;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start; /* Ensure text doesn't center itself */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .social-icons-overlay {
+        position: absolute;
+        bottom: 90px;
+        left: 40px; /* Match the padding-left of the overlay */
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav-overlay.open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .nav-menu li {
+        /* Increase the 10px to 25px or 30px for a more 'airy' feel */
+        margin: 20px 0 !important;
+        /* moved margin to li a */
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-menu li a {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        
+        /* THE FIX: Switch to block so it fills the width */
+        display: block; 
+        width: 100%; 
+        
+        /* Add padding so the blue background has 'air' around the text */
+        /* padding: 10px 0 10px 40px;  */
+        /* padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px; */
+        
+        /* Ensure the highlight color doesn't have sharp edges on the right */
+        text-align: left;
+        transition: background-color 0.4s ease;
+    }
+
+    /* This handles the 'weird box' look when clicked or hovered */
+    .nav-menu li a:hover, 
+    .nav-menu li a:active,
+    .nav-menu li a:focus {
+        /* This color will now span the entire width of the black drawer */
+        background-color: rgba(160, 201, 228, 0.15); 
+        
+        /* Optional: move the text slightly to the right on hover for a 'slick' HCI feel */
+        /* padding-left: 45px;  */
+        
+        color: var(--accent);
+        outline: none;
+    }
+
+    .social-icons-overlay img {
+        height: 40px; /* Uniform size for mobile */
+        width: auto;
+        filter: drop-shadow(0 0 8px rgba(255,255,255,0.1));
+    }
+
+    .theme-switch-wrapper {
+        right: 15px; 
+    }
 }
