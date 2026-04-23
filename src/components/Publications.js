@@ -6,6 +6,23 @@ function Publications() {
     <section id="publications" className="section-publications">
     {/* <section id="publications" className="section-publications" style="background-image: url('images/backgrounds/AdobeStock_132147953.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"> */}
         <h2 className="publications-heading">Publications</h2>
+
+        {/* GOOGLE PROFILE BUTTON */}
+
+        <div className="filter-bar">
+          <a 
+            href="https://scholar.google.com/citations?user=BtFs_D8AAAAJ&hl=en&oi=ao" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="filter-btn active" /* 'active' gives it the navy/blue high contrast */
+            style={{ textDecoration: 'none', marginBottom: '40px' }}
+          >
+            View Full Google Scholar Profile
+          </a>
+        </div>
+
+        {/* PUBLICATION LIST*/}
+
         <ul className="publication-list">
             {/* <li className="publication-item">Author1, Author2, Author3. "Title of the paper." Journal Name, Year, Volume(Issue), Pages.</li>
             <li className="publication-item">Author1, Author2. "Title of the paper." Journal Name, Year, Volume(Issue), Pages.</li> */}

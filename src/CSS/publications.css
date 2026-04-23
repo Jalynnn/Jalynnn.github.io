@@ -60,3 +60,24 @@
         padding: 10px;
     }
 }
+
+/* ================================== GOOGLE SCHOLAR BUTTON ================================== */
+
+/* This ensures the button uses the shared styles from your project section */
+.section-publications .filter-bar {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    background: transparent; /* Cleaner for this light background */
+}
+
+.section-publications .filter-btn {
+    /* Using your existing optimal blue / navy combo */
+    border: 1px solid #022943;
+    color: #022943;
+    font-family: inherit;
+}
+
+.section-publications .filter-btn.active {
+    background-color: #022943;
+    color: #00d4ff; /* Your electric blue for high contrast */
+}

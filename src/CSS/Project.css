@@ -204,6 +204,7 @@
     justify-content: center; /* Keeps them centered */
     gap: 12px;
     margin: 30px auto;
+    margin-bottom: -10px;
     /* By reducing max-width slightly, you force a more balanced wrap */
     max-width: 800px; 
     flex-wrap: wrap;
@@ -258,4 +259,63 @@
 .filter-btn:first-child {
     min-width: 120px; /* Makes 'All' a bit more prominent */
     justify-content: center;
+}
+
+/* ================================== SHOW MORE ================================== */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* ADD THIS: Ensures the fade/button don't touch the cards */
+    padding-bottom: 40px; 
+}
+
+/* ADD THIS: The 'Smoke and Mirrors' that makes it look polished */
+.projects-fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* How tall the fade is */
+    /* Adjust the color below to match your Project section background color exactly */
+    background: linear-gradient(transparent, #D3D9C3); 
+    pointer-events: none; /* Crucial: allows you to click buttons 'under' the fade */
+    z-index: 2;
+}
+
+.show-more-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 3; /* Keeps button above the fade */
+}
+
+.show-more-container .filter-btn {
+    min-width: 200px;
+    letter-spacing: 1px;
+}
+
+.projects-wrapper.collapsed {
+    /* Adjust this number so it cuts off in the GAP between rows, 
+       rather than cutting through the middle of a photo */
+    max-height: 960px; 
+    overflow: hidden;
+    /* Optional: add a subtle bottom border to show where the 'gate' is */
+    border-bottom: 2px solid rgba(2, 41, 67, 0.1); 
+}
+
+.projects-wrapper {
+    width: 100%;
+    position: relative;
+    /* Keeps the smooth 'slide' when opening */
+    transition: max-height 0.5s ease-in-out; 
+}
+
+.projects-wrapper.expanded {
+    max-height: 5000px; 
+    /* Optional: hide the fade when expanded */
 }

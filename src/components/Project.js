@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/Project.css';
 
-const categories = ["All", "Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems", "Virtual & Augmented Reality"];
+const categories = ["All", "Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems", "Virtual & Augmented Reality", "Published"];
 
 const ProjectCard = ({ title, image, date, description, isSelected, handleClick }) => {
   const descriptionWithLink = description.replace(
@@ -50,16 +50,9 @@ const Projects = () => {
 
   const [selectedProject, setSelectedProject] = useState(null);
   const [activeFilter, setActiveFilter] = useState("All");
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  // useEffect(() => {
-  //   const params = new URLSearchParams(window.location.search);
-  //   const filterParam = params.get('filter');
-    
-  //   // If the URL has ?filter=BCI, set the active filter to that!
-  //   if (filterParam && categories.includes(filterParam)) {
-  //     setActiveFilter(filterParam);
-  //   }
-  // }, []);
+  /* LISTENER FOR KEYWORDS IN ABOUT SECTION */
 
   useEffect(() => {
     const handleUrlChange = () => {
@@ -88,7 +81,55 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Measuring Cognitive Workload in VR with fNIRS",
+      title: "Website Revamp",
+      categories: ["Human-Computer Interaction"],
+      image: `${process.env.PUBLIC_URL}/images/backgrounds/Screenshot 2026-04-22 223142.png`,
+      date: "April 2023 to Current",
+      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
+      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
+      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
+      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
+      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
+      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+    },
+    {
+      title: "Seamless Interactions BCI IRB Title",
+      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems"],
+      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
+      date: "April 2023 to Current",
+      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
+      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
+      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
+      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
+      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
+      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+    },
+    {
+      title: "Doctoral Consortium: Seamless Interactions BCI",
+      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems", "Published"],
+      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
+      date: "April 2023 to Current",
+      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
+      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
+      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
+      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
+      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
+      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+    },
+    {
+      title: "Manipulating Germane Cognitive Load in VR",
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
+      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
+      date: "April 2023 to Current",
+      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
+      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
+      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
+      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
+      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
+      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+    },
+    {
+      title: "Manipulating Intrinsic & Extraneous Cognitive Workload",
       categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
@@ -112,7 +153,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Beauty and Movement",
-      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction", "Published"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BeautyVertical.PNG`,
       date: "November 2022 to September 2024",
       description: `This was my primary project during the last two years of my undergraduate degree.
@@ -124,7 +165,7 @@ const Projects = () => {
     },    
     {
       title: "Augmented Reality for Healthcare Workers",
-      categories: ["Virtual & Augmented Reality"],
+      categories: ["Virtual & Augmented Reality", "Published"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BaseCamp.jpg`,
       date: "May 2023 to December 2023",
       description: `Innovative tools like augmented reality, when used by healthcare workers, have the potential to improve collaboration and task management in resuscitation cases. 
@@ -134,7 +175,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Realism",
-      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction", "Published"],
       image: `${process.env.PUBLIC_URL}/images/Projects/RealismVertical.PNG`,
       date: "May 2022 to May 2024",
       description: `This is phase two of an ongoing project that I worked on with Rachel Masters during my undergraduate degree.
@@ -178,17 +219,52 @@ const Projects = () => {
     }
   };
 
+  // return (
+  //   <section id="projects" className="section-projects" onClick={handleBackgroundClick}>
+
+  //     <h2 className="projects-heading">Projects</h2>
+
+  //     {/* Filter Projects Logic */}
+  //     <div className = "filter-bar">
+  //       {categories.map(cat=> (
+  //         <button
+  //           key = {cat}
+  //           className = {`filter-btn ${activeFilter === cat ? 'active' : ''}`}
+  //           onClick={() => setActiveFilter(cat)}
+  //         >
+  //           {cat}
+  //         </button>
+  //       ))}
+  //     </div>
+
+  //     <div className="projects-container" onClick={(e) => e.stopPropagation()}> {/* Prevents background click when clicking inside the container */}
+  //       {/* PURPOSE: Filter projects */}
+  //       {/* {projects.map((project, index) => ( */}
+
+  //       {filteredProjects.map((project, index) => (
+  //         <ProjectCard
+  //           key={index}
+  //           title={project.title}
+  //           image={project.image}
+  //           date={project.date}
+  //           description={project.description}
+  //           isSelected={selectedProject === index} // Check if the current project is selected
+  //           handleClick={() => handleProjectClick(index)} // Open/close project with one click
+  //         />
+  //       ))}
+  //     </div>
+  //   </section>
+  // );
+
   return (
     <section id="projects" className="section-projects" onClick={handleBackgroundClick}>
-
       <h2 className="projects-heading">Projects</h2>
 
-      {/* Filter Projects Logic */}
-      <div className = "filter-bar">
-        {categories.map(cat=> (
+      <div className="filter-bar">
+        {categories.map(cat => (
           <button
-            key = {cat}
-            className = {`filter-btn ${activeFilter === cat ? 'active' : ''}`}
+            key={cat}
+            className={`filter-btn ${activeFilter === cat ? 'active' : ''}`}
             onClick={() => setActiveFilter(cat)}
           >
             {cat}
@@ -196,22 +272,35 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="projects-container" onClick={(e) => e.stopPropagation()}> {/* Prevents background click when clicking inside the container */}
-        {/* PURPOSE: Filter projects */}
-        {/* {projects.map((project, index) => ( */}
+      {/* START WRAPPER: This must be OUTSIDE the container */}
+      <div className={`projects-wrapper ${isExpanded ? 'expanded' : 'collapsed'}`}>
+        
+        <div className="projects-container" onClick={(e) => e.stopPropagation()}>
+          {filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              {...project}
+              isSelected={selectedProject === index}
+              handleClick={() => handleProjectClick(index)}
+            />
+          ))}
+        </div>
 
-        {filteredProjects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            image={project.image}
-            date={project.date}
-            description={project.description}
-            isSelected={selectedProject === index} // Check if the current project is selected
-            handleClick={() => handleProjectClick(index)} // Open/close project with one click
-          />
-        ))}
+        {/* FADE OVERLAY: Inside the wrapper, but after the container */}
+        {/* {!isExpanded && <div className="projects-fade-overlay"></div>} */}
+      
+      </div> {/* END WRAPPER */}
+
+      {/* SHOW MORE BUTTON: Outside the wrapper so it doesn't get cut off */}
+      <div className="show-more-container">
+        <button 
+          className="filter-btn active" 
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          {isExpanded ? "Show Less" : "Show More Projects"}
+        </button>
       </div>
+
     </section>
   );
 };
