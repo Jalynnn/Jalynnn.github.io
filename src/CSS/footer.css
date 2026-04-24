@@ -1,43 +1,55 @@
 .footer {
     background-color: #022943;
-    padding: 20px 0;
+    padding: 30px 0; /* A bit more breathing room */
     text-align: center;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    align-items: center; /* Ensures all icons are centered vertically */
+    align-items: center;
+    gap: 15px; /* Modern way to handle spacing instead of margins */
+    margin-bottom: 15px;
 }
 
 .social-icons a {
-    display: flex; /* Use flexbox for child alignment */
-    justify-content: center;
+    display: flex;
     align-items: center;
-    margin: 0 10px;
-    max-height:50px;
+    justify-content: center;
+    height: 50px; /* This creates a uniform "shelf" for the icons */
+    width: 50px;
+    text-decoration: none;
 }
 
 .social-icons img {
+    /* This makes the icons behave! */
+    max-height: 100%; 
+    max-width: 100%;
     width: auto;
-    height: 40px;
-    /* width: 50px; /* Set a uniform width */
-    /* height: 50px; /* Set a uniform height */
-    /* object-fit: contain; /* Ensures the aspect ratio is maintained and fits within the given dimensions */
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
+/* Specific overrides if LinkedIn or ORCID still look "off" 
+   because of their internal white space/padding */
 .social-icons .linkedin-icon {
-    height: 65px;
-    margin-right: -10px;
+    transform: scale(1.2); /* Adjust scale instead of hard pixel heights */
 }
 
 .social-icons .orcid-icon {
-    height: 75px;
-    margin-left: -30px;
+    transform: scale(1.4);
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Subtle hover effect */
+    filter: brightness(1.2);
 }
 
 .Extra {
-    padding-top: 5px;
+    padding-top: 10px;
     color: white;
-    font: Georgia;
+    font-family: Georgia, serif; /* Fixed syntax */
+    font-size: 0.85rem;
+    line-height: 1.6;
 }

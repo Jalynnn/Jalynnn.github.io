@@ -216,12 +216,12 @@ const Projects = () => {
     setSelectedProject((prevSelected) => (prevSelected === index ? null : index));
   };
 
-  const handleBackgroundClick = () => {
-    // Close any open project when clicking the background
-    if (selectedProject !== null) {
-      setSelectedProject(null);
-    }
-  };
+  // const handleBackgroundClick = () => {
+  //   // Close any open project when clicking the background
+  //   if (selectedProject !== null) {
+  //     setSelectedProject(null);
+  //   }
+  // };
 
   // return (
   //   <section id="projects" className="section-projects" onClick={handleBackgroundClick}>

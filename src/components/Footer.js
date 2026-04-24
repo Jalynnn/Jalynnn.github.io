@@ -11,8 +11,8 @@ function Footer() {
                 <a href="https://orcid.org/0000-0002-2897-5833" target="_blank" rel="noopener noreferrer"><img className="orcid-icon" src={`${process.env.PUBLIC_URL}/images/Icons/ORCID_IDIcon.png`} alt="ORCID"/></a>
             </div>
             <div className="Extra">
-                <p>All rights reserved, 2024 Jalynn B. Nicoly</p>
-                <p>Last Updated: April 21st, 2026</p>
+                <p>Established 2024, Intuitively Designed</p>
+                <p>Last Updated: April 23rd, 2026</p>
             </div>
         </div>
     );
