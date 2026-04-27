@@ -23,38 +23,34 @@ header {
 }
 
 /* ================================== DESKTOP SOCIAL ICONS ================================== */
+
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 20px; 
     align-items: center;
     margin-left: max(20px, calc((90vw - 1400px) / 2));
 }
 
-.social-icons img {
-    height: 50px; 
+/* 1. Set a single, forced height for all three classes */
+.social-icons img.linkedin-icon,
+.social-icons img.orcid-icon,
+.social-icons img.github-icon {
+    height: 45px !important; /* Force them to be exactly the same */
     width: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease-in-out;
+    display: block;
+    transform: scale(1); /* Set a base scale */
 }
 
-.social-icons img.linkedin-icon {
-    height: 45px !important;
-    width: auto;
-    margin-right: -15px;
-}
-
-.social-icons img.orcid-icon {
-    height: 45px !important;
-    width: auto;
-    margin-left: -15px;
-}
-
-.social-icons a img {
-    height: 45px;
-}
-
+/* 2. Unified Hover Rule */
+/* This targets the image when the surrounding anchor tag is hovered */
 .social-icons a:hover img {
-    transform: scale(1.1);
+    transform: scale(1.15) !important;
 }
+
+/* 3. Remove the old reset rules */
+/* Delete the section where you had "transform: none; /* Reset everything */
+/* Those reset rules were likely fighting the scale command. */
 
 /* ================================== DESKTOP NAVIGATION ================================== */
 .nav-toggle {

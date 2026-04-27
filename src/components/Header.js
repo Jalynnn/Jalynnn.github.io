@@ -107,7 +107,7 @@ function Header({ isDarkMode, setIsDarkMode }) {
                     <img className="linkedin-icon" src={isDarkMode ? `${process.env.PUBLIC_URL}/images/Icons/whiteLinkedin.png` : `${process.env.PUBLIC_URL}/images/Icons/Linkedin_circle_black-512.png`} alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/Jalynnn" target="_blank" rel="noopener noreferrer">
-                    <img src={isDarkMode ? `${process.env.PUBLIC_URL}/images/Icons/Github_logo_svg.svg.png` : `${process.env.PUBLIC_URL}/images/Icons/githubIcon (1).png`} alt="GitHub" />
+                    <img className="github-icon" src={isDarkMode ? `${process.env.PUBLIC_URL}/images/Icons/Github_logo_svg.svg.png` : `${process.env.PUBLIC_URL}/images/Icons/githubIcon (1).png`} alt="GitHub" />
                 </a>
                 <a href="https://orcid.org/0000-0002-2897-5833" target="_blank" rel="noopener noreferrer">
                     <img className="orcid-icon" src={isDarkMode ? `${process.env.PUBLIC_URL}/images/Icons/whiteorcid (1).png` : `${process.env.PUBLIC_URL}/images/Icons/BlackOrcid-icon-sm.png`} alt="ORCID" />
