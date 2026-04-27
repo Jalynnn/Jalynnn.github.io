@@ -78,7 +78,7 @@ function About() {
             <ul className="research-labs">
                 <li>
                     <div className = 'lab'>
-                        <img src={`${process.env.PUBLIC_URL}/images/Labs/SHINELabBlue.PNG`} alt="SHINELab Logo" className="lab-imgs"/>
+                        <img src={`${process.env.PUBLIC_URL}/images/Labs/imageedit_6_5869690173.PNG`} alt="SHINELab Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
                                 <a href="https://www.colorado.edu/lab/shine/" target="_blank" rel="noopener noreferrer" aria-label="SHINELab. Opens in a new tab"style={{ color: 'var(--about-lab-hypertext)' }}><strong>SHINELab</strong></a>
