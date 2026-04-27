@@ -78,8 +78,15 @@
 /* ================================== RESEARCH LABS ================================== */
 
 .research-labs {
-    display: grid;
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    align-items: stretch;
+
     gap: 30px;
     margin-top: 20px;
     padding: 0 7%; /* Adjust padding to set distance from left and right */
@@ -98,15 +105,24 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
-    min-height: 380px;
 }
 
 .research-labs li {
+    /* Make cards the same length */
+    /* Also needs align-items: stretch in research-labs */
+    display: flex;
+
     margin-bottom: 10px; 
     /* Add space between list items */
 
-    padding: 20px;
+    /* padding: 0px; */
     list-style-type: none;
+
+    /* Trying to make second row centered */
+    flex: 0 1 20%;
+    max-width: 600px;
+    min-width: 350px;
+
 }
 
 .lab-imgs {
@@ -156,9 +172,22 @@
     }
 
     .research-labs {
-        text-align: center; /* Center-align list on small screens */
+        text-align: justify; /* Center-align list on small screens */
         padding: 0 5%;
     }
+
+    .profile-photo {
+        width: 325px;
+        height: 325px;
+        border-radius: 50%;
+        border: 6px solid var(--about-border);
+        flex-shrink: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* .research-labs li {
+        min-width: 150px;
+    } */
 }
 
 @media (min-width: 769px) and (max-width: 2000px) {
@@ -216,8 +245,8 @@
 .section-about .filter-bar {
     display: flex;
     justify-content: center;
-    gap: 50px; 
-    margin-top: 30px;
+    /* gap: 50px;  */
+    /* margin-top: 30px; */
 }
 
 .section-about .filter-btn {
@@ -252,5 +281,6 @@
 .section-about .filter-btn:first-child {
     min-width: 160px; /* Slightly wider than the project 'All' button for emphasis */
     justify-content: center;
-    border-width: 2px; /* A bit more 'weight' than the Resume button */
+    border-width: 2px; 
+    /* A bit more 'weight' than the Resume button */
 }

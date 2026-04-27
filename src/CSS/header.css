@@ -28,6 +28,7 @@ header {
     display: flex;
     gap: 20px; 
     align-items: center;
+    margin-top: 10px;
     margin-left: max(20px, calc((90vw - 1400px) / 2));
 }
 
@@ -181,14 +182,7 @@ nav ul li a:hover {
         padding: 0;
         margin: 0;
         width: 100%;
-    }
-
-    .social-icons-overlay {
-        position: absolute;
-        bottom: 90px;
-        left: 40px; /* Match the padding-left of the overlay */
-        display: flex;
-        gap: 25px;
+        /* height: 10vh; */
     }
 
     .nav-overlay.open {
@@ -198,10 +192,11 @@ nav ul li a:hover {
 
     .nav-menu li {
         /* Increase the 10px to 25px or 30px for a more 'airy' feel */
-        margin: 20px 0 !important;
+        /* margin: 20px 0 !important; */
         /* moved margin to li a */
         width: 100%;
         list-style: none;
+        margin: 1vh 0 !important;
     }
 
     .nav-menu li a {
@@ -237,6 +232,14 @@ nav ul li a:hover {
         
         color: var(--accent);
         outline: none;
+    }
+
+    .social-icons-overlay {
+        position: absolute;
+        bottom: 40px;
+        left: 40px; /* Match the padding-left of the overlay */
+        display: flex;
+        gap: 25px;
     }
 
     .social-icons-overlay img {
