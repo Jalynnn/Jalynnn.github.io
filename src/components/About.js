@@ -1,5 +1,5 @@
-import '../CSS/About.css';
-import '../CSS/AboutButtons.css';
+import '../CSS/about.css';
+import '../CSS/aboutButtons.css';
 import React from 'react';
 
 function About() {

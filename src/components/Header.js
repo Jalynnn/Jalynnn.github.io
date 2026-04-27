@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import '../CSS/Header.css';
+import '../CSS/header.css';
 
 function Header({ isDarkMode, setIsDarkMode }) {
 

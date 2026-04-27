@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/Project.css';
 
-const categories = ["All", "Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems", "Virtual & Augmented Reality", "Published"];
+const categories = ["All", "Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems", "Virtual & Augmented Reality"];
 
 const ProjectCard = ({ title, image, date, description, isSelected, handleClick }) => {
   const descriptionWithLink = description.replace(
@@ -110,7 +110,7 @@ const Projects = () => {
     },
     {
       title: "Doctoral Consortium: Seamless Interactions BCI",
-      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems", "Published"],
+      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems"],
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
       description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
@@ -157,7 +157,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Beauty and Movement",
-      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction", "Published"],
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BeautyVertical.PNG`,
       date: "November 2022 to September 2024",
       description: `This was my primary project during the last two years of my undergraduate degree.
@@ -169,7 +169,7 @@ const Projects = () => {
     },    
     {
       title: "Augmented Reality for Healthcare Workers",
-      categories: ["Virtual & Augmented Reality", "Published"],
+      categories: ["Virtual & Augmented Reality"],
       image: `${process.env.PUBLIC_URL}/images/Projects/BaseCamp.jpg`,
       date: "May 2023 to December 2023",
       description: `Innovative tools like augmented reality, when used by healthcare workers, have the potential to improve collaboration and task management in resuscitation cases. 
@@ -179,7 +179,7 @@ const Projects = () => {
     },    
     {
       title: "Forest Bathing: Realism",
-      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction", "Published"],
+      categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/RealismVertical.PNG`,
       date: "May 2022 to May 2024",
       description: `This is phase two of an ongoing project that I worked on with Rachel Masters during my undergraduate degree.

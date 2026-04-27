@@ -1,4 +1,4 @@
-import '../CSS/Publications.css'
+import '../CSS/publications.css'
 import React from 'react';
 
 function Publications() {
