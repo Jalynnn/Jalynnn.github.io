@@ -216,6 +216,25 @@ const Projects = () => {
     setSelectedProject((prevSelected) => (prevSelected === index ? null : index));
   };
 
+  // const [rowLimit, setRowLimit] = useState(6);
+
+  // useEffect(() => {
+  //   const updateLimit = () => {
+  //     const width = window.innerWidth;
+  //     if (width <= 480) {
+  //       setRowLimit(2); // 1 column layout: 2 rows = 2 projects
+  //     } else if (width <= 768) {
+  //       setRowLimit(4); // 2 column layout: 2 rows = 4 projects
+  //     } else {
+  //       setRowLimit(6); // 3 column layout: 2 rows = 6 projects
+  //     }
+  //   };
+
+  //   updateLimit();
+  //   window.addEventListener('resize', updateLimit);
+  //   return () => window.removeEventListener('resize', updateLimit);
+  // }, []);
+
   // const handleBackgroundClick = () => {
   //   // Close any open project when clicking the background
   //   if (selectedProject !== null) {
@@ -271,7 +290,10 @@ const Projects = () => {
           <button
             key={cat}
             className={`filter-btn ${activeFilter === cat ? 'active' : ''}`}
-            onClick={() => setActiveFilter(cat)}
+            onClick={() => {
+              setActiveFilter(cat);
+              setIsExpanded(false);
+            }}
           >
             {cat}
           </button>
@@ -294,10 +316,27 @@ const Projects = () => {
 
         {/* FADE OVERLAY: Inside the wrapper, but after the container */}
         {/* {!isExpanded && <div className="projects-fade-overlay"></div>} */}
+
+        {/* CHANGE: Only show fade if collapsed AND there are more than 6 projects (2 rows) */}
+        {!isExpanded && filteredProjects.length > 6 && (
+          <div className="projects-fade-overlay"></div>
+        )}
       
       </div> {/* END WRAPPER */}
 
-      {/* SHOW MORE BUTTON: Outside the wrapper so it doesn't get cut off */}
+      {/* CHANGE: Only show button container if there are more than 6 projects */}
+      {filteredProjects.length > 6 && (
+        <div className="show-more-container">
+          <button 
+            className="filter-btn active" 
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? "Show Less" : "Show More Projects"}
+          </button>
+        </div>
+      )}
+
+      {/* SHOW MORE BUTTON: Outside the wrapper so it doesn't get cut off
       <div className="show-more-container">
         <button 
           className="filter-btn active" 
@@ -305,7 +344,7 @@ const Projects = () => {
         >
           {isExpanded ? "Show Less" : "Show More Projects"}
         </button>
-      </div>
+      </div> */}
 
     </section>
   );
