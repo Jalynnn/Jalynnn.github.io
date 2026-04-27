@@ -304,6 +304,12 @@
     letter-spacing: 1px;
 }
 
+.show-more-container .filter-btn:hover {
+    background: rgba(160, 201, 228, 0.2) !important;
+    border-color: var(--accent) !important;
+    color: white;
+}
+
 .projects-wrapper.collapsed {
     /* Adjust this number so it cuts off in the GAP between rows, 
        rather than cutting through the middle of a photo */
