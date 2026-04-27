@@ -43,7 +43,8 @@ function App() {
       <Project />
       {/* <Gallery /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
+      <Footer isDarkMode={isDarkMode} />
 
     </div>
   );
