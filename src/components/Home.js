@@ -99,8 +99,9 @@ function Home({ isDarkMode }) {
 
 
         <div className="content">
-            <h2>JALYNN NICOLY</h2>
+            <h2>JALYNN BLU NICOLY</h2>
             <h4>Human-Computer Interaction Researcher</h4>
+            {/* <h4>Ph.D. Student at University of Colorado Boulder</h4> */}
         </div>
     </section>
   );

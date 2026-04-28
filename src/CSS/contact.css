@@ -7,6 +7,15 @@
     font-size: 4em;
 }
 
+.subcaption {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #D3D9C3;
+    text-align: left;
+    padding: 20px;
+    font-size: 1em;
+}
+
 .section-contact {
     position: relative;
     /* overflow: hidden; */

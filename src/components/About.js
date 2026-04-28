@@ -31,16 +31,16 @@ function About() {
                     </p> */}
                     <ul className="about-list">
                         <li>
-                            <strong>Ph.D. Student</strong> at the University of Colorado Boulder researching how <strong>neurological signals</strong> enhance virtual and augmented reality environments.
+                            I am a <strong>Ph.D. Student</strong> at the University of Colorado Boulder, where I research how <strong>neurological signals</strong> can be used to enhance and adapt virtual and augmented reality environments.
                         </li>
                         <li>
-                            Completed undergraduate studies at <strong>Colorado State University</strong> originating with a background in <strong>Psychology</strong> and human behavior, and later transferred to <strong>Computer Science</strong>.
+                            I completed my undergraduate studies at <strong>Colorado State University</strong>, beginning with a background in <strong>Psychology</strong> before transitioning to <strong>Computer Science</strong> to better understand the intersection of human behavior and technology.
                         </li>
                         <li>
-                            <strong>Graduate Instructor</strong> ongoing for two semesters teaching Introduction to Coding in C++ at the University of Colorado Boulder.
+                            I currently am a <strong>Graduate Instructor</strong> for Introduction to Coding in C++ at the University of Colorado Boulder, where I have spent the last two semesters teaching students foundational programming.
                         </li>
                         <li>
-                            Developed <strong>six years of experience</strong> across multiple specialized research labs seen below.
+                            I have developed <strong>six years of experience</strong> working across several research labs, focusing on practical applications of brain-computer interfaces and human-computer interaction.
                         </li>
                     </ul>
                 </div>

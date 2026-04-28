@@ -220,6 +220,7 @@
 }
 
 .about-list li::before {
+    /* content: "•"; */
     content: "▪"; 
     /* You can use a dash "-" or a dot "•" */
 
