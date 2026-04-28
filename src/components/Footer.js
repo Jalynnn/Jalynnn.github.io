@@ -24,7 +24,7 @@ function Footer({isDarkMode}) {
             </div>
             <div className="Extra">
                 <p>Established 2024, Intuitively Designed</p>
-                <p>Last Updated: April 23rd, 2026</p>
+                <p>Last Updated: April 28th, 2026</p>
             </div>
         </div>
     );

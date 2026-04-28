@@ -140,9 +140,9 @@
     font-size: 18px;
 }
 
-.lab-info a {
+/* .lab-info a {
     color: white;
-}
+} */
 
 .lab-about {
     padding-top: 20px;
@@ -284,4 +284,36 @@
     justify-content: center;
     border-width: 2px; 
     /* A bit more 'weight' than the Resume button */
+}
+
+/* ================================== HYPERLINKS ================================== */
+
+/* ================================== LABS
+
+/* Reusable link style for the About section */
+.about-link {
+    color: var(--about-lab-hypertext);
+}
+
+.about-link:hover {
+    color: var(--about-lab-hypertext-hover); 
+    text-decoration: underline;
+    filter: brightness(1.2);
+}
+
+/* ================================== KEYWORDS
+
+/* Specific styling for your Keyword links to make them look like tags */
+.keyword-link {
+    /* color: var(--about-text); */
+    color: var(--keyword-color);
+    text-decoration: underline;
+    /* opacity: 0.8; */
+    /* text-decoration: none; */
+    /* transition: opacity 0.2s; */
+}
+
+.keyword-link:hover {
+    opacity: 1;
+    color: var(--accent);
 }

@@ -1,7 +1,8 @@
 .section-projects {
     /* background-color: #A4D7CC; */
     /* background-color: #49111C; */
-    background-color: #405759;
+    /* background-color: #405759; */
+    background-color: var(--about-background);
     padding: 30px;
     text-align: center;
     margin-bottom: -10px;
@@ -10,7 +11,7 @@
 .projects-heading {
     width: 100%;
     margin-bottom: -20px;
-    color: white;
+    color: var(--about-text);
     text-align: center;
     padding: 20px;
     font-size: 4em;
@@ -41,7 +42,7 @@
     margin-bottom: 20px;
     text-align: left;
     overflow: hidden;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .project-image-container {
@@ -226,8 +227,13 @@
 
 .filter-btn {
     background: transparent;
+    /* Allows for button to be same color as background */
+
     border: 1px solid rgba(160, 201, 228, 0.4); 
+
     color: var(--text-main);
+    /* Changes the color of the button text */
+
     padding: 10px 22px; /* Slightly more padding for a better 'hit' area */
     border-radius: 4px;
     cursor: pointer;
@@ -247,9 +253,14 @@
 
 .filter-btn.active {
     /* margin-top: -40px; */
-    background: var(--header-bg-transparent); /* Your optimal blue */
+    /* background: var(--header-bg-transparent);  */
+    background: var(--project-filter-button);
+    /* Active button color background */
+    
     color: #fff;
+
     border-color: var(--accent);
+    /* Makes active button border brighter */
 }
 
 .filter-btn:hover:not(.active) {
@@ -268,6 +279,7 @@
 .filter-btn.active .filter-count {
     background: rgba(0, 212, 255, 0.2);
     color: #00d4ff;
+    /* color: var(--project-filter-button); */
 }
 
 .filter-btn:first-child {
@@ -305,9 +317,11 @@
 }
 
 .show-more-container .filter-btn:hover {
-    background: rgba(160, 201, 228, 0.2) !important;
-    border-color: var(--accent) !important;
-    color: white;
+    /* background: rgba(160, 201, 228, 0.2) !important;
+    border-color: var(--accent) !important; */
+    background: rgba(160, 201, 228, 0.1);
+    border-color: var(--accent);
+    color: var(--show-more-button-text-color);
 }
 
 .projects-wrapper.collapsed {

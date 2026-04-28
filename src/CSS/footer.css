@@ -1,5 +1,6 @@
 .footer {
-    background-color: #022943;
+    /* background-color: #022943; */
+    background-color: var(--about-background);
     padding: 40px 0; 
     /* Balanced padding */
     text-align: center;
@@ -32,9 +33,11 @@
 
 .Extra {
     padding-top: 10px;
-    color: white;
+    /* color: white; */
+    color: var(--about-text);
     font-family: Georgia, serif;
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.6;
     opacity: 0.8; /* Slightly softer for a 'secondary' info feel */
+    font-weight: bold;
 }

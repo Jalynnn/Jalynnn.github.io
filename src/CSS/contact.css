@@ -1,7 +1,8 @@
 .contact-heading {
     width: 100%;
-    margin-bottom: 20px;
-    color: #D3D9C3;
+    /* margin-bottom: 20px; */
+    /* color: #D3D9C3; */
+    color: var(--about-text);
     text-align: center;
     padding: 20px;
     font-size: 4em;
@@ -10,7 +11,8 @@
 .subcaption {
     width: 100%;
     margin-bottom: 20px;
-    color: #D3D9C3;
+    /* color: #D3D9C3; */
+    color: var(--about-text);
     text-align: left;
     padding: 20px;
     font-size: 1em;
@@ -22,7 +24,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #022943;
+    /* background-color: #022943; */
+    background-color: var(--about-background);
+
 }
 
 .contact-content {
@@ -56,29 +60,74 @@
     max-width: 700px;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    border: 1px solid var(--about-text);
+    /* Change the color of the border boxes */
+
     border-radius: 5px;
     font-family: Georgia;
     font-size: 15px;
     color: #022943;
-}
-
-.section-contact .submit:hover {
-    background: lightgray;
+    /* Changes the color of the text in the box */
 }
 
 .message {
     min-height: 200px;
 }
 
+/* ================================== OLD CONTACT SUBMIT BUTTON ================================== */
+
 .section-contact .submit {
-    background: white;
-    color: #022943;
+    /* background: white; */
+    background: lightgray;
+    /* Changes background color of button */
+
+    /* color: #022943; */
+    color: black;
+    /* Changes color of text in button */
+
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     font-family: Georgia;
     font-size: 15px;
+}
+
+.section-contact .submit:hover {
+    /* When you hover over the button, it turns gray */
+    background: gray;
+}
+
+/* ================================== CONTACT SUBMIT BUTTON ================================== */
+
+.section-contact .submit {
+    /* Base styles to match .filter-btn */
+    background: var(--project-filter-button); /* Match the active scholar/show more button */
+    color: var(--scholar-button-text-color);
+    border: 1px solid var(--accent);
+    
+    padding: 10px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    /* Font styles */
+    font-family: inherit; /* Switches from Georgia to match your navigation/buttons */
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    width: auto !important; /* Prevents the button from being 200% width like the inputs */
+    min-width: 200px; /* Match the width of Google Scholar/Show More */
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.section-contact .submit:hover {
+    /* Match the Show More/Scholar hover exactly */
+    background: rgba(160, 201, 228, 0.1) !important;
+    border-color: var(--accent) !important;
+    color: var(--show-more-button-text-color) !important;
 }
 
 @media (max-width: 600px) {

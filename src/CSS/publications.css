@@ -1,6 +1,7 @@
 .section-publications {
     /* background-image: url('AdobeStock_132147953.jpg'); */
-    background-color: #D3D9C3;
+    /* background-color: #D3D9C3; */
+    background-color: var(--about-background);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -15,7 +16,8 @@
 .publications-heading {
     width: 100%;
     margin-bottom: 20px;
-    color: #022943;
+    /* color: #022943; */
+    color: var(--publication-header);
     text-align: center;
     padding: 20px;
     font-size: 4em;
@@ -32,7 +34,7 @@
 
 .publication-item {
     position: relative;
-    color: #022943;
+    color: var(--publication-list-item-color);
     margin-bottom: 30px;
     padding: 0 20px;
     max-width: 800px;
@@ -47,7 +49,7 @@
     top: 0;
     bottom: 0;
     width: 6px;
-    background-color: #022943;
+    background-color: var(--publication-bullet-color);
     transform: translateX(-50%);
 }
 
@@ -63,21 +65,48 @@
 
 /* ================================== GOOGLE SCHOLAR BUTTON ================================== */
 
-/* This ensures the button uses the shared styles from your project section */
 .section-publications .filter-bar {
-    margin-top: -20px;
-    margin-bottom: -10px;
-    background: transparent; /* Cleaner for this light background */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+/* Ensure the Scholar button shares the same base and hover logic as the Projects button */
 .section-publications .filter-btn {
-    /* Using your existing optimal blue / navy combo */
-    border: 1px solid #022943;
-    color: #022943;
+    min-width: 200px; /* Match the 'Show More' width */
+    letter-spacing: 1px;
+    justify-content: center;
     font-family: inherit;
+    text-decoration: none; /* In case you used an <a> tag */
 }
 
+/* THE HOVER FIX: Match the Show More Projects button exactly */
+.section-publications .filter-btn:hover {
+    background: rgba(160, 201, 228, 0.1) !important;
+    border-color: var(--accent) !important;
+    color: var(--show-more-button-text-color) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Use this for the "Active/Focused" look if needed */
 .section-publications .filter-btn.active {
-    background-color: #022943;
-    color: #00d4ff; /* Your electric blue for high contrast */
+    background: var(--project-filter-button);
+    color: var(--scholar-button-text-color);
+    border-color: var(--accent);
+}
+
+/* ================================== HYPERLINK ================================== */
+
+.pub-link {
+    color: var(--publication-hyperlink);
+    text-decoration: underline;
+    transition: all 0.2s ease; /* Makes the hover feel smooth, not jarring */
+}
+
+.pub-link:hover {
+    /* HCI Tip: Make the link brighter or change color to show it's interactive */
+    color: var(--publication-hyperlink); 
+    text-decoration: none; /* Optional: remove underline on hover for a 'clean' look */
+    filter: brightness(1.2);
 }
