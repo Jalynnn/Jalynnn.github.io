@@ -85,55 +85,35 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "BCI for Target Selection in VR",
+      categories: ["Human-Computer Interaction", "Brain-Computer Interfaces", "Neuroadaptive Systems"],
+      image: `${process.env.PUBLIC_URL}/images/Projects/DC2.png`,
+      date: "October 2025 to January 2026",
+      description: `My doctoral research begins in three phases, building on the 2024 work of Reddy and Hirshfield regarding electroencephalography’s ability to capture and measure stimulus-preceding negativity, an event-related potential that identifies user intention. The first phase, presented here, highlights that Charlotte Wyman and I have begun data collection under CU Boulder IRB approval to further Reddy’s work. Our goal is to create a closed-loop brain-computer interface with the support of deep learning models and virtual reality. `  
+    },
+    {
       title: "Website Revamp",
       categories: ["Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/backgrounds/Screenshot 2026-04-22 223142.png`,
-      date: "April 2023 to Current",
-      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
-      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
-      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
-      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
-      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
-      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+      date: "January 2026 to April 2026",
+      description: `In an effort to align my course projects with real-world applications, I completed a revamp of my personal website to refocus on human-computer interaction. My website was previously in need of improvements to enhance the user’s cognitive workload. This included changes to various features, such as the homepage visuals, the light/dark mode option, button placement for better ease of use, and display changes to demonstrate interaction feasibility. This website revamp was submitted for CSCI 5919 at the University of Colorado Boulder. More information about these changes is available in <a href="https://drive.google.com/drive/folders/1K8U5-32JuEmYZsHyIA0ey9vDZlz12gdW?usp=sharing" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Jalynn's Google folder on her CSCI 5919 project. Opens in a new tab"><u>this folder</u></a>.`  
     },
     {
-      title: "Seamless Interactions BCI IRB Title",
-      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems"],
-      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
-      date: "April 2023 to Current",
-      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
-      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
-      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
-      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
-      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
-      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
-    },
-    {
-      title: "Doctoral Consortium: Seamless Interactions BCI",
-      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems"],
-      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
-      date: "April 2023 to Current",
-      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
-      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
-      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
-      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
-      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
-      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
-    },
-    {
-      title: "Manipulating Germane Cognitive Load in VR",
+      title: "Germane Load Manipulation in VR",
       categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
-      image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
+      image: `${process.env.PUBLIC_URL}/images/Projects/Screenshot 2026-04-28 203010.png`,
       date: "April 2023 to Current",
-      description: `Collaborators include Colorado State University (CSU), University of Colorado Boulder (CU), University of Northern Colorado, and University of Montana. 
-      In this project, we are examining how users are affected by the manipulation of three types of cognitive load: Germane, Extraneous, and Intrinsic. 
-      I started working on this project as a CSU student, attending meetings during the design phase and later running experiments with participants. 
-      After graduating with my bachelor's degree and transitioning to CU Boulder, I became more involved in the design of the virtual environment and its connection to brain signal measures. 
-      I have made modifications to the virtual environment in Unity to integrate the Lab Streaming Layer (LSL). 
-      LSL allows event markers to be sent and received by both the functional near-infrared spectroscopy (fNIRS) Aurora system and the electroencephalography (EEG) BrainVision application, enhancing data analysis.`  
+      description: `Building on previous studies conducted with the University of Colorado Boulder, Colorado State University, the University of Northern Colorado, and the University of Montana, our team has begun to explore the manipulation of germane load. Germane load is one of the three components of cognitive workload, influencing a user’s ability to learn based on the strategy utilized. This manipulation is feasible in virtual reality environments, where our team enforces one of two strategies used during training and testing for the memorization and recall of simple shapes. Electroencephalography was integrated to measure user engagement, while functional near-infrared spectroscopy was used to capture cognitive workload. These results will soon be available in our upcoming publication at CHI 2027.`  
     },
     {
-      title: "Manipulating Intrinsic & Extraneous Cognitive Workload",
+      title: "Doctoral Consortium",
+      categories: ["Brain-Computer Interfaces", "Neuroadaptive Systems"],
+      image: `${process.env.PUBLIC_URL}/images/Projects/Screenshot 2026-04-28 200658.png`,
+      date: "July 2025 to October 2025",
+      description: `This is the first presentation of a high-level overview of my doctoral research goals, which was presented to collect initial feedback from attendees at the ACM ICMI conference in October 2025. The original submit document is available <a href="https://dl.acm.org/doi/full/10.1145/3716553.3750827" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Jalynn's ACM Doctoral Consortium Paper. Opens in a new tab"><u>here</u></a>. I present my goal to create a closed-loop system using machine learning models to identify stimulus-preceding negativity as measured by electroencephalography. By doing so, I will be able to adaptively modify a virtual environment based on the user’s intention during gaze-based interaction.`  
+    },
+    {
+      title: "Intrinsic & Extraneous Load Manipulation in VR",
       categories: ["Virtual & Augmented Reality", "Human-Computer Interaction"],
       image: `${process.env.PUBLIC_URL}/images/Projects/fNIRSCap.jpg`,
       date: "April 2023 to Current",
@@ -199,7 +179,7 @@ const Projects = () => {
     },
     {
       title: "Judgments of Learning",
-      categories: ["Brain-Computer Interfaces"],
+      categories: [],
       image: `${process.env.PUBLIC_URL}/images/Projects/BehavioralSciencesBuilding.jpg`,
       date: "January 2021 to December 2021",
       description: `While the first six months of this project involved getting acclimated to my role as a research assistant, during the second half, I had the opportunity to help run experiments.
@@ -215,69 +195,6 @@ const Projects = () => {
     // Open the clicked project, or close if it's already selected
     setSelectedProject((prevSelected) => (prevSelected === index ? null : index));
   };
-
-  // const [rowLimit, setRowLimit] = useState(6);
-
-  // useEffect(() => {
-  //   const updateLimit = () => {
-  //     const width = window.innerWidth;
-  //     if (width <= 480) {
-  //       setRowLimit(2); // 1 column layout: 2 rows = 2 projects
-  //     } else if (width <= 768) {
-  //       setRowLimit(4); // 2 column layout: 2 rows = 4 projects
-  //     } else {
-  //       setRowLimit(6); // 3 column layout: 2 rows = 6 projects
-  //     }
-  //   };
-
-  //   updateLimit();
-  //   window.addEventListener('resize', updateLimit);
-  //   return () => window.removeEventListener('resize', updateLimit);
-  // }, []);
-
-  // const handleBackgroundClick = () => {
-  //   // Close any open project when clicking the background
-  //   if (selectedProject !== null) {
-  //     setSelectedProject(null);
-  //   }
-  // };
-
-  // return (
-  //   <section id="projects" className="section-projects" onClick={handleBackgroundClick}>
-
-  //     <h2 className="projects-heading">Projects</h2>
-
-  //     {/* Filter Projects Logic */}
-  //     <div className = "filter-bar">
-  //       {categories.map(cat=> (
-  //         <button
-  //           key = {cat}
-  //           className = {`filter-btn ${activeFilter === cat ? 'active' : ''}`}
-  //           onClick={() => setActiveFilter(cat)}
-  //         >
-  //           {cat}
-  //         </button>
-  //       ))}
-  //     </div>
-
-  //     <div className="projects-container" onClick={(e) => e.stopPropagation()}> {/* Prevents background click when clicking inside the container */}
-  //       {/* PURPOSE: Filter projects */}
-  //       {/* {projects.map((project, index) => ( */}
-
-  //       {filteredProjects.map((project, index) => (
-  //         <ProjectCard
-  //           key={index}
-  //           title={project.title}
-  //           image={project.image}
-  //           date={project.date}
-  //           description={project.description}
-  //           isSelected={selectedProject === index} // Check if the current project is selected
-  //           handleClick={() => handleProjectClick(index)} // Open/close project with one click
-  //         />
-  //       ))}
-  //     </div>
-  //   </section>
-  // );
 
   return (
     // HERE IS ONE OF TWO CHANGES FOR PROJECT DIM
