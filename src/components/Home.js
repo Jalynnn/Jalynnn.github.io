@@ -1,7 +1,5 @@
 import '../CSS/Home.css'
-// import React from 'react';
 import React, { useEffect, useRef } from 'react';
-// import React, { useEffect, useRef, useState } from 'react';
 
 function Home({ isDarkMode }) {
   // const videoRef = useRef(null);
@@ -9,37 +7,9 @@ function Home({ isDarkMode }) {
   const darkVideoRef = useRef(null);
   const lightVideoRef = useRef(null);
 
-  // const [delayedDarkMode, setDelayedDarkMode] = useState(isDarkMode);
-
-  // useEffect(() => {
-  //   if (videoRef.current) {
-  //     // 1.0 is normal, 0.5 is half speed, 0.25 is quarter speed
-  //     videoRef.current.playbackRate = 0.2; 
-  //   }
-  // }, [isDarkMode]);
-
-  // useEffect(() => {
-  //   if (isDarkMode) {
-  //     // Delay for Dark Mode: allows the background to start turning black first
-  //     const timer = setTimeout(() => {
-  //       setDelayedDarkMode(true);
-  //     }, 200); 
-  //     return () => clearTimeout(timer);
-  //   } else {
-  //     // Instant for Light Mode: snaps back immediately
-  //     setDelayedDarkMode(false);
-  //   }
-  // }, [isDarkMode]);
-
-  // useEffect(() => {
-  //   if (videoRef.current) {
-  //     videoRef.current.playbackRate = 0.2; 
-  //   }
-  // }, [delayedDarkMode]); // Run speed fix when the delayed video actually swaps
-
   useEffect(() => {
     // Apply slow-mo to both so they are ready
-    if (darkVideoRef.current) darkVideoRef.current.playbackRate = 0.2;
+    if (darkVideoRef.current) darkVideoRef.current.playbackRate = 0.1;
     if (lightVideoRef.current) lightVideoRef.current.playbackRate = 0.2;
   }, []);
 
@@ -62,8 +32,16 @@ function Home({ isDarkMode }) {
         autoPlay muted loop 
         className={`bg-video light-vid-style ${!isDarkMode ? 'visible' : 'hidden'}`}
       >
-        <source src={`${process.env.PUBLIC_URL}/videos/127204825-human-brain-rotating-animation.mp4`} type="video/mp4" />
+        {/* <source src={`${process.env.PUBLIC_URL}/videos/127204825-human-brain-rotating-animation.mp4`} type="video/mp4" /> */}
+        <source src={`${process.env.PUBLIC_URL}/videos/vecteezy_black-and-white-illustration-of-a-human-brain-top-view_61737158.mp4`} type="video/mp4" />
       </video>
+
+      {/* LIGHT GIF */}
+      {/* <img 
+        src={`${process.env.PUBLIC_URL}/videos/gif-dribbb.gif`} 
+        alt="Brain Animation"
+        className={`bg-video light-vid-style ${!isDarkMode ? 'visible' : 'hidden'}`}
+      /> */}
 
 
       {/* <video 
