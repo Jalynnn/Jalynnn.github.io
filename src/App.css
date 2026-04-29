@@ -91,6 +91,8 @@ body:not(.dark-mode) {
     --publication-header: #022943;
 
     --keyword-color: #022943;
+
+    --nav-item-colors: #022943;
 }
 
 /* DARK MODE */
@@ -128,4 +130,6 @@ body.dark-mode {
     --publication-header: white;
 
     --keyword-color: white;
+
+    --nav-item-colors: white;
 }
