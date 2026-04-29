@@ -68,7 +68,6 @@ body:not(.dark-mode) {
     --about-border: #022943;
 
     /* About Background */
-    /* --about-background: #A0C9E4; */
     --about-background: white;
 
     /* About Text Color */
@@ -93,6 +92,8 @@ body:not(.dark-mode) {
     --keyword-color: #022943;
 
     --nav-item-colors: #022943;
+
+    --section-border: #022943; 
 }
 
 /* DARK MODE */
@@ -114,7 +115,6 @@ body.dark-mode {
     --about-buttons-background: black;
 
     --about-lab-hypertext: #A0C9E4; /* #78DCE8 */
-    --about-lab-hypertext-hover: #A0C9E4;
 
     --project-filter-button: rgba(0, 0, 0, 0.7);
 
@@ -129,7 +129,10 @@ body.dark-mode {
 
     --publication-header: white;
 
-    --keyword-color: white;
+    --keyword-color: #A0C9E4;
+    --keyword-color-hover: #92d3fe;
 
     --nav-item-colors: white;
+
+    --section-border: white;
 }

@@ -1,11 +1,17 @@
 .section-projects {
-    /* background-color: #A4D7CC; */
-    /* background-color: #49111C; */
-    /* background-color: #405759; */
     background-color: var(--about-background);
     padding: 30px;
     text-align: center;
     margin-bottom: -10px;
+}
+
+.section-projects::after {
+    content: "";
+    display: block;
+    width: 90%;      /* This makes it not touch the edges */
+    margin: 0 auto;  /* Centers it */
+    height: 1px;
+    background-color: var(--section-border);
 }
 
 .projects-heading {

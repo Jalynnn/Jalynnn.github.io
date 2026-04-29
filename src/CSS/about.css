@@ -5,6 +5,15 @@
     color: white;
 }
 
+.section-about::after {
+    content: "";
+    display: block;
+    width: 90%;      /* This makes it not touch the edges */
+    margin: 0 auto;  /* Centers it */
+    height: 1px;
+    background-color: var(--section-border);
+}
+
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -296,9 +305,9 @@
 }
 
 .about-link:hover {
-    color: var(--about-lab-hypertext-hover); 
+    color: var(--about-lab-hypertext); 
     text-decoration: underline;
-    filter: brightness(1.2);
+    filter: brightness(2);
 }
 
 /* ================================== KEYWORDS
@@ -315,5 +324,6 @@
 
 .keyword-link:hover {
     opacity: 1;
-    color: var(--accent);
+    color: var(--keyword-color-hover);
+    filter: brightness(2);
 }

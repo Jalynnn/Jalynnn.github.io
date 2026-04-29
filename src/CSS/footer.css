@@ -6,6 +6,16 @@
     text-align: center;
 }
 
+.footer::before {
+    content: "";
+    display: block;
+    width: 90%;      /* This makes it not touch the edges */
+    margin: 0 auto;  /* Centers it */
+    height: 1px;
+    background-color: var(--section-border);
+    margin-bottom: 20px;
+}
+
 .footer-social-icons {
     display: flex;
     justify-content: center;
