@@ -333,7 +333,7 @@
 .projects-wrapper.collapsed {
     /* Use 'max-content' or a slightly more generous vh to avoid 
        clipping the top of the 2nd row */
-    max-height: 98vh; 
+    max-height: 105vh; 
     overflow: hidden;
     border-bottom: 2px solid rgba(2, 41, 67, 0.1); 
 }

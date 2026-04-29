@@ -98,10 +98,11 @@ function About() {
             <ul className="research-labs">
                 <li>
                     <div className = 'lab'>
-                        <img src={`${process.env.PUBLIC_URL}/images/Labs/imageedit_6_5869690173.PNG`} alt="SHINELab Logo" className="lab-imgs"/>
+                        {/* C:\Users\Jalynn\OneDrive\Documents\GitHub\JalynnNicoly.github.io\public\images\Labs\imageedit_6_5869690173.png */}
+                        <img src={`${process.env.PUBLIC_URL}/images/Labs/imageedit_6_5869690173.png`} alt="SHINE Lab Logo" className="lab-imgs"/>
                         <div className='lab-info'>
                             <p>
-                                <a href="https://www.colorado.edu/lab/shine/" className="about-link" target="_blank" rel="noopener noreferrer" aria-label="SHINELab. Opens in a new tab"><strong>SHINELab</strong></a>
+                                <a href="https://www.colorado.edu/lab/shine/" className="about-link" target="_blank" rel="noopener noreferrer" aria-label="SHINE Lab. Opens in a new tab"><strong>SHINELab</strong></a>
                             </p>
                         </div>
                         <div className='lab-about'>
