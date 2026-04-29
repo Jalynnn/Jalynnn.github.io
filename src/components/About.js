@@ -1,5 +1,5 @@
 import '../CSS/about.css';
-import '../CSS/aboutButtons.css';
+import '../CSS/AboutButtons.css';
 import React from 'react';
 
 function About() {
@@ -40,7 +40,7 @@ function About() {
                             I currently am a <strong>Graduate Instructor</strong> for Introduction to Coding in C++ at the University of Colorado Boulder, where I have spent the last two semesters teaching students foundational programming.
                         </li>
                         <li>
-                            I have developed <strong>six years of experience</strong> working across several research labs, focusing on practical applications of brain-computer interfaces and human-computer interaction.
+                            I have developed <strong>six years of experience</strong> working across several research labs and industries, focusing on practical applications of human-computer interaction.
                         </li>
                     </ul>
                 </div>
@@ -86,11 +86,15 @@ function About() {
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My newest research lab, which has adopted me over the summer of 2024 in preparation for beginning my Ph.D. with them in the fall of 2024. <a href="https://www.colorado.edu/ics/leanne-hirshfield/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab"><u>Leanne Hirshfields'</u></a> lab has already brought me in as one of their own, starting strong with a project funded by the Office of Naval Research, introducing me to the world of brain signal measuring devices!
+                                <strong>System-Human Interaction with NIRS and EEG Lab:</strong> My current research lab starting May 2024 preparing me for my Ph.D. alongside <a href="https://www.colorado.edu/ics/leanne-hirshfield/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Leanne Hirshfield's page. Opens in a new tab"><u>Leanne Hirshfield</u></a>. This lab introduced me to the world of brain signal measuring devices, completing multiple phases of an Office of Naval Research project and developing an ongoing brain-computer interface.
                             </p>
                         </div>
                     </div>
                 </li>
+
+                {/* Google (Need Approval) In collaboration with Greg B and Eric Gomez, I have the unique opportunity as a Student Researcher to contribute to the success of Google Beam’s comparisons to traditional video conferencing. By integrating measures of neural signals to decipher neural synchrony across users, our team aims to demonstrate user’s increased presence in the Beam environment. */}
+
+                {/* CognifiSense (Need Approval) My mentor, Marta Ceko, at the University of Colorado Boulder introduced me to her team led by Amanda Way, where I participated as a research assistant working directly with participants in a long-term study. This study focused on improving those with lower back pain through virtual reality exercises. */}
 
                 <li>
                     <div className = 'lab'>
@@ -102,7 +106,7 @@ function About() {
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Natural User Interaction Lab:</strong> The most influential research experience I have gained is in <a href="https://compsci.colostate.edu/person/?id=22550A7530193FD205613DD09DD2EE6F&sq=t/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Francisco Ortega's page. Opens in a new tab"><u>Francisco Ortega's</u></a> research lab. I was in this lab until I graduated, and still am at heart. Here, I was placed on over five research projects, graduating with a co-authorship with ACM TAP 2024 and a first-authorship with ACM SAP 2024.
+                                <strong>Natural User Interaction Lab:</strong> My undergraduate lab led by <a href="https://compsci.colostate.edu/person/?id=22550A7530193FD205613DD09DD2EE6F&sq=t/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Francisco Ortega's page. Opens in a new tab"><u>Francisco Ortega</u></a> setting me up for a successful career introducing me to virtual and augmented reality in various projects. Here, I was placed on over five research projects, graduating from my Bachelors as a first author with an ACM SAP 2024 paper. 
                             </p>
                         </div>
                     </div>
@@ -118,7 +122,7 @@ function About() {
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Artificial Intelligence and Robotics Lab:</strong> The summer of 2023 brought me to New York City's Cornell Tech with  <a href="https://www.angeliquemtaylor.com/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Angelique Taylor's page. Opens in a new tab"><u>Angelique Taylor</u></a>, where I developed an augmented reality application for healthcare settings. My participation in Distributed Research Experience for Undergraduates brought us together as we pursued the idea of improving resuscitation cases by starting with team dynamics.
+                                <strong>Artificial Intelligence and Robotics Lab:</strong> Participating in Distribute Research Experience for Undergraduates (DREU) introduced me to <a href="https://www.angeliquemtaylor.com/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Angelique Taylor's page. Opens in a new tab"><u>Angelique Taylor's</u></a> Cornell Tech lab. Here I developed an augmented reality application for healthcare workers, pursuing how to improve team dynamics within resuscitation procedures.
                             </p>
                         </div>
                     </div>
@@ -134,7 +138,7 @@ function About() {
                         </div>
                         <div className='lab-about'>
                             <p>
-                                <strong>Memory and Metacognition Lab:</strong> Under the mentorship of <a href="https://psywebserv.psych.colostate.edu/psylist/facdetail.php?FirstName=Matthew&LastName=Rhodes/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Matthew Rhodes's page. Opens in a new tab"><u>Matthew Rhodes</u></a>, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I first got to help run research studies and gain insight into what it would mean to be a graduate student.
+                                <strong>Memory and Metacognition Lab:</strong> Under the mentorship of <a href="https://psywebserv.psych.colostate.edu/psylist/facdetail.php?FirstName=Matthew&LastName=Rhodes/" className="about-link" rel="noopener noreferrer" target="_blank" aria-label="Matthew Rhodes's page. Opens in a new tab"><u>Matthew Rhodes</u></a>, I started as a research assistant as early as my second semester of university. This lab was held in the Psychology department of Colorado State University, where I was first exposed to running research studies and gained insight into what it would mean to be a graduate student.
                             </p>
                         </div>
                     </div>
