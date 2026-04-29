@@ -59,6 +59,27 @@ const Projects = () => {
   /* LISTENER FOR KEYWORDS IN ABOUT SECTION */
 
   useEffect(() => {
+      const handleExternalFilter = (event) => {
+          const selectedFilter = event.detail;
+          
+          // ACTUAL FIX: Update the state so the UI changes
+          setActiveFilter(selectedFilter);
+          
+          // HCI Tip: If they filter by keyword, expand the section 
+          // so they don't have to click "Show More" to see their results
+          setIsExpanded(true); 
+          
+          console.log("Filtering projects by:", selectedFilter);
+      };
+
+      window.addEventListener('filterChange', handleExternalFilter);
+
+      return () => {
+          window.removeEventListener('filterChange', handleExternalFilter);
+      };
+  }, []);
+
+  useEffect(() => {
     const handleUrlChange = () => {
       // 1. Look at the standard search (?filter=...)
       const params = new URLSearchParams(window.location.search);
